@@ -1,4 +1,35 @@
-@use "./breakpoints";
-@use "./mixins";
-@use "./reset";
-@use "./vars";
+@use "./breakpoints" as *;
+@use "./vars" as *;
+@use "./mixins" as *;
+:root {
+  font-family: "Raleway", sans-serif;
+  --second-family: "Paprika", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  @include media(desktop) {
+    width: 1440px;
+    height: 100%;
+  }
+}

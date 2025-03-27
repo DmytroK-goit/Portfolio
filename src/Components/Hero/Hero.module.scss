@@ -1,0 +1,49 @@
+@use "../../scss/mixins" as *;
+.container {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #080808;
+  height: 400px;
+  @include media(desktop) {
+    height: 700px;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+.container h1 {
+  font-weight: 800;
+  font-size: 44px;
+  color: #fff;
+}
+.information {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 171%;
+  color: #9c9c9c;
+  @include media(desktop) {
+    font-size: 14px;
+  }
+}
+.cont_info {
+  @include media(desktop) {
+    width: 492px;
+  }
+}
+.container_avatar {
+  display: block;
+  border-radius: 50%;
+  @include media(desktop) {
+  }
+}
+.container_avatar img {
+  display: block;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
