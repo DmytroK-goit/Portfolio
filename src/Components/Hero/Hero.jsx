@@ -1,5 +1,5 @@
 import s from "./Hero.module.scss";
-import avatar from "../../Img/Avatar.jpg";
+import avatar from "../../images/avatar.jpg";
 export const Hero = () => {
   return (
     <div className={s.container}>
