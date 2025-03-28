@@ -2,13 +2,13 @@ import { Route, Routes } from "react-router-dom";
 import "./scss/style.scss";
 import SharedLayout from "./Components/SharedLayout";
 import NotFound from "./Components/NotFound/NotFound";
-import { Hero } from "./Components/Hero/Hero";
+import { Main } from "./Components/Main/Main";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
-        <Route index element={<Hero />} />
+        <Route index element={<Main />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

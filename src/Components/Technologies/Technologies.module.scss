@@ -1,0 +1,70 @@
+@use "../../scss/mixins" as *;
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #030101;
+  min-height: 700px;
+  @include media(desktop) {
+    height: auto;
+    width: 1440px;
+    padding: 40px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @include media(desktop) {
+    gap: 40px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  color: #333;
+  width: 120px;
+  height: 140px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+
+    @include media(desktop) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @include media(desktop) {
+    width: 150px;
+    height: 170px;
+  }
+}

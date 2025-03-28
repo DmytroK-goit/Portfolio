@@ -1,0 +1,35 @@
+@use "../../scss/mixins" as *;
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  background-color: #27a7a7;
+  height: 400px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  min-height: 500px;
+  @include media(desktop) {
+    height: auto;
+    width: 1440px;
+    padding: 40px;
+  }
+}
+.title {
+  font-size: 36px;
+  text-align: center;
+  color: black;
+  @include media(desktop) {
+  }
+}
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 300px;
+  @include media(desktop) {
+    width: 800px;
+  }
+}
