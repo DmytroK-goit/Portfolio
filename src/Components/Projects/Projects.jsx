@@ -4,13 +4,13 @@ import { EffectCube, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
-
-import finance1 from "../../images/finance/head page.jpg";
-import finance2 from "../../images/finance/login page.jpg";
-import finance3 from "../../images/finance/head inform.jpg";
-import finance4 from "../../images/finance/head inform2.jpg";
-
 import s from "./Projects.module.scss";
+import { AquaTrack } from "./AquaTrack/AquaTrack";
+import { Finance } from "./Finance/Finance";
+import { Movies } from "./Movies/Movies";
+import { Portfolio } from "./Portfolio/Portfolio";
+import { SparkArt } from "./SparkArt/SparkArt";
+import { Trucks } from "./Trucks/Trucks";
 
 export const Projects = () => {
   return (
@@ -30,43 +30,22 @@ export const Projects = () => {
         className={s.mySwiper}
       >
         <SwiperSlide>
-          <img src={finance1} alt="Project 1" width="300" />
-          <img src={finance1} alt="Project 1" width="300" />
-          <img src={finance1} alt="Project 1" width="300" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            corrupti facilis voluptatum vel provident culpa quasi blanditiis
-            nostrum ducimus nihil inventore fuga magnam ad unde, dicta
-            perferendis itaque cupiditate atque?
-          </p>
-          <a href="https://financial-analyst.vercel.app/">Finance App</a>
+          <AquaTrack />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={finance2} alt="Project 2" width="300" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            corrupti facilis voluptatum vel provident culpa quasi blanditiis
-            nostrum ducimus nihil inventore fuga magnam ad unde, dicta
-            perferendis itaque cupiditate atque?
-          </p>
+          <Finance />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={finance3} alt="Project 3" width="300" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            corrupti facilis voluptatum vel provident culpa quasi blanditiis
-            nostrum ducimus nihil inventore fuga magnam ad unde, dicta
-            perferendis itaque cupiditate atque?
-          </p>
+          <Movies />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={finance4} alt="Project 4" width="300" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            corrupti facilis voluptatum vel provident culpa quasi blanditiis
-            nostrum ducimus nihil inventore fuga magnam ad unde, dicta
-            perferendis itaque cupiditate atque?
-          </p>
+          <Portfolio />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SparkArt />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Trucks />
         </SwiperSlide>
       </Swiper>
     </div>

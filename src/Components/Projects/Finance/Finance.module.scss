@@ -1,0 +1,6 @@
+@use "../../../scss/mixins" as *;
+
+.container {
+  @include media(desktop) {
+  }
+}

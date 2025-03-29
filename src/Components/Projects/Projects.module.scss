@@ -11,7 +11,7 @@
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   color: #fff;
-  min-height: 500px;
+  min-height: 700px;
 
   @include media(desktop) {
     max-width: 1440px;
@@ -22,8 +22,7 @@
 
 .mySwiper {
   width: 100%;
-  // width: 300px;
-  height: 400px;
+  height: 700px;
   margin: 0 auto;
 
   .swiper-slide {
@@ -37,6 +36,19 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      box-sizing: border-box;
+    }
+  }
+}
+.img_container {
+  @include media(desktop) {
+    display: flex;
+    gap: 10px;
+    img {
+      display: block;
+
+      object-fit: cover;
+      box-sizing: border-box;
     }
   }
 }
