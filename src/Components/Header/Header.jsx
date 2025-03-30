@@ -4,16 +4,16 @@ export const Header = () => {
     <div className={s.header}>
       <ul className={s.list}>
         <li>
-          <a href="">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="">About Me</a>
+          <a href="#about">About Me</a>
         </li>
         <li>
-          <a href="">Technologies</a>
+          <a href="#tech">My Tech Skills</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
       </ul>
     </div>

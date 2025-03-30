@@ -14,7 +14,7 @@ import { Trucks } from "./Trucks/Trucks";
 
 export const Projects = () => {
   return (
-    <div className={s.container}>
+    <div id="projects" className={s.container}>
       <h2 className={s.title}>Projects</h2>
       <Swiper
         effect={"cube"}

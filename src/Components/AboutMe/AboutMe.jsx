@@ -2,7 +2,7 @@ import s from "./AboutMe.module.scss";
 
 export const AboutMe = () => {
   return (
-    <div className={s.container}>
+    <div id="about" className={s.container}>
       <h2 className={s.title}>About Me</h2>
       <p className={s.information}>
         Hi, my name is Dmytro. I’m 37 years old and I’m a Junior Fullstack

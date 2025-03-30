@@ -14,8 +14,8 @@ import Mongo from "../../images/svg/mongodb-icon-1.svg";
 
 export const Technologies = () => {
   return (
-    <div className={s.container}>
-      <h2>Technologies</h2>
+    <div id="tech" className={s.container}>
+      <h2>My Tech Skills</h2>
       <ul className={s.list}>
         <li className={s.item}>
           <img src={html} alt="Html" />
