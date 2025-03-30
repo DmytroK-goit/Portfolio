@@ -3,7 +3,7 @@
 @use "./mixins" as *;
 :root {
   font-family: "Raleway", sans-serif;
-  --second-family: "Paprika", sans-serif;
+  --second-family: "IBM Plex Mono", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -14,6 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --second-color: #242424;
+  --white-color: #fcf9f9;
 }
 html,
 body {

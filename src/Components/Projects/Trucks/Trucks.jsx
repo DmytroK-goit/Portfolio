@@ -1,5 +1,5 @@
-import s from "./Trucks.module.scss";
-
+import s from "../IndividualStyles.module.scss";
+import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/Trucks/main_page.jpg";
 import mainPage from "../../../images/Trucks/head.jpg";
 import settings from "../../../images/Trucks/TrackInfo.png";
@@ -24,9 +24,17 @@ export const Trucks = () => {
         quisquam aut, impedit rerum molestiae blanditiis architecto ea.
         Doloremque, saepe sed.
       </p>
-      <a href="https://travel-trucks-wine.vercel.app/" target="_blank">
-        Trucks
-      </a>
+      <div className={s.cont_button}>
+        <p>PRESS</p>
+        <FaHandPointRight />
+        <a
+          href="https://travel-trucks-wine.vercel.app/"
+          className={s.but}
+          target="_blank"
+        >
+          Trucks
+        </a>
+      </div>
     </div>
   );
 };

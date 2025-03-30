@@ -1,4 +1,5 @@
-import s from "./AquaTrack.module.scss";
+import s from "../IndividualStyles.module.scss";
+import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/AquaTrack/head.jpg";
 import mainPage from "../../../images/AquaTrack/mainPage.jpg";
 import settings from "../../../images/AquaTrack/settings.jpg";
@@ -18,14 +19,24 @@ export const AquaTrack = () => {
         </li>
       </ul>
       <p className={s.parag}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam
-        nam quibusdam libero velit, hic laborum error incidunt voluptatum
-        quisquam aut, impedit rerum molestiae blanditiis architecto ea.
-        Doloremque, saepe sed.
+        Team project. The Aqua Track application is a hydration tracking tool
+        designed to help users monitor and improve their daily water intake. As
+        the Front-End Team Lead for the Aqua Track project, I led the
+        development of the user interface using React, managed the application's
+        state with Redux, and provided support to the development team. Server
+        part is developed with Mongo DB.
       </p>
-      <a href="https://aqua-track-group-01.vercel.app/" target="_blank">
-        AquaTrack
-      </a>
+      <div className={s.cont_button}>
+        <p>PRESS</p>
+        <FaHandPointRight />
+        <a
+          className={s.but}
+          href="https://aqua-track-group-01.vercel.app/"
+          target="_blank"
+        >
+          AquaTrack
+        </a>
+      </div>
     </div>
   );
 };

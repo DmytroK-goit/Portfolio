@@ -1,7 +1,8 @@
-import s from "./Movies.module.scss";
+import s from "../IndividualStyles.module.scss";
 import head from "../../../images/movies/head.jpg";
 import mainPage from "../../../images/movies/movie info.jpg";
 import settings from "../../../images/movies/Search.jpg";
+import { FaHandPointRight } from "react-icons/fa";
 export const Movies = () => {
   return (
     <div className={s.container}>
@@ -23,12 +24,17 @@ export const Movies = () => {
         quisquam aut, impedit rerum molestiae blanditiis architecto ea.
         Doloremque, saepe sed.
       </p>
-      <a
-        href="https://goit-react-hw-05-three-beige.vercel.app/"
-        target="_blank"
-      >
-        Movies
-      </a>
+      <div className={s.cont_button}>
+        <p>PRESS</p>
+        <FaHandPointRight />
+        <a
+          className={s.but}
+          href="https://goit-react-hw-05-three-beige.vercel.app/"
+          target="_blank"
+        >
+          Movies
+        </a>
+      </div>
     </div>
   );
 };
