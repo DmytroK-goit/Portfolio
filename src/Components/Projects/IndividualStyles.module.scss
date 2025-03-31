@@ -1,11 +1,13 @@
 @use "../../scss/mixins" as *;
 
 .container {
+  display: flex;
   width: 100%;
   height: auto;
   border-radius: 12px;
 
   @include media(desktop) {
+    flex-direction: column;
     height: 100%;
     border-radius: 16px;
   }
@@ -23,6 +25,7 @@
 }
 
 .list {
+  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -32,7 +35,7 @@
 
   img {
     display: block;
-    max-width: 300px;
+    max-width: 150px;
     border-radius: 10px;
   }
 
@@ -53,7 +56,7 @@
   font-size: 14px;
   text-align: center;
   padding: 0 6px;
-
+  width: 220px;
   @include media(desktop) {
     font-size: 16px;
     width: 800px;
@@ -110,26 +113,3 @@
     }
   }
 }
-// .mySwiperPhoto {
-//   width: 100%;
-//   max-width: 380px;
-//   height: auto;
-//   padding: 10px;
-
-//   @include media(desktop) {
-//     max-width: 800px;
-//   }
-// }
-
-// .swiper-slide {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   img {
-//     width: 100%;
-//     height: auto;
-//     border-radius: 8px;
-//     object-fit: cover;
-//   }
-// }
