@@ -1,41 +1,89 @@
 @use "../../scss/mixins" as *;
+
 .header {
   position: fixed;
   top: 0;
   left: 50%;
-  min-width: 320px;
-  height: 100px;
+  transform: translateX(-50%);
+
+  height: 70px;
+  background: #1b1b1b;
+  border-radius: 12px;
   margin: 0 auto;
+  padding: 8px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
-  background: #1b1b1b;
-  border-radius: 12px;
   z-index: 1000;
-  transform: translateX(-50%);
+  min-width: 320px;
+  max-width: 380px;
   @include media(desktop) {
-    border-radius: 0 0 8px 8px;
-    width: 1110px;
+    max-width: 1110px;
     height: 70px;
+    border-radius: 0 0 8px 8px;
   }
 }
+
+.menuButton {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 101;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: -1000%;
+  width: 70%;
+  height: 100vh;
+  background-color: #272727;
+  transition: right 0.3s ease-in-out;
+  padding: 80px 20px;
+  z-index: 999;
+  &.open {
+    right: 0;
+  }
+
+  @include media(desktop) {
+    position: static;
+    height: auto;
+    background: none;
+    padding: 0;
+    right: auto;
+  }
+}
+
 .list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 
-  width: 800px;
   a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
     font-family: "IBM Plex Mono", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.01em;
-    color: #9c9c9c;
   }
 
   @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
+    width: 800px;
+
+    a {
+      font-size: 14px;
+      color: #9c9c9c;
+      letter-spacing: 0.01em;
+    }
   }
 }

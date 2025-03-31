@@ -17,12 +17,7 @@
   --second-color: #242424;
   --white-color: #fcf9f9;
 }
-html,
-body {
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
+
 body {
   display: flex;
   justify-content: center;
@@ -34,4 +29,15 @@ body {
     width: 1440px;
     height: 100%;
   }
+}
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

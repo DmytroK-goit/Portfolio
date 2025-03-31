@@ -3,20 +3,41 @@ import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/AquaTrack/head.jpg";
 import mainPage from "../../../images/AquaTrack/mainPage.jpg";
 import settings from "../../../images/AquaTrack/settings.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { EffectFlip, Pagination, Navigation } from "swiper/modules";
 export const AquaTrack = () => {
   return (
     <div className={s.container}>
       <h3 className={s.title}>AquaTrack</h3>
       <ul className={s.list}>
-        <li>
-          <img src={head} alt="Head page" />
-        </li>
-        <li>
-          <img src={mainPage} alt="mainPage" />
-        </li>
-        <li>
-          <img src={settings} alt="settings" />
-        </li>
+        <Swiper
+          effect={"flip"}
+          grabCursor={true}
+          pagination={true}
+          navigation={true}
+          modules={[EffectFlip, Pagination, Navigation]}
+          className="mySwiperPhoto"
+        >
+          <SwiperSlide>
+            <li>
+              <img src={head} alt="Head page" />
+            </li>
+          </SwiperSlide>
+          <SwiperSlide>
+            <li>
+              <img src={mainPage} alt="mainPage" />
+            </li>
+          </SwiperSlide>
+          <SwiperSlide>
+            <li>
+              <img src={settings} alt="settings" />
+            </li>
+          </SwiperSlide>
+        </Swiper>
       </ul>
       <p className={s.parag}>
         Team project. The Aqua Track application is a hydration tracking tool

@@ -1,6 +1,7 @@
 @use "../../scss/mixins" as *;
 
 .container {
+  scroll-margin-top: 80px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -10,10 +11,14 @@
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   color: #030101;
-  min-height: 700px;
+  min-height: 480px;
+  width: 100%;
+  max-width: 380px;
   @include media(desktop) {
+    scroll-margin-top: 100px;
     height: auto;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     padding: 40px;
   }
 }
@@ -41,8 +46,8 @@
   border-radius: 16px;
   background-color: #ffffff;
   color: #333;
-  width: 120px;
-  height: 140px;
+  width: 60px;
+  height: 80px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -53,8 +58,8 @@
   }
 
   img {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 
     @include media(desktop) {

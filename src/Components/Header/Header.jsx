@@ -1,21 +1,47 @@
+import { useState } from "react";
 import s from "./Header.module.scss";
+import { FiMenu, FiX } from "react-icons/fi";
+
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className={s.header}>
-      <ul className={s.list}>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#tech">My Tech Skills</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-      </ul>
-    </div>
+    <header className={s.header}>
+      <nav className={`${s.nav} ${isMenuOpen ? s.open : ""}`}>
+        <ul className={s.list}>
+          <li>
+            <a href="#home" onClick={closeMenu}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={closeMenu}>
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="#tech" onClick={closeMenu}>
+              My Tech Skills
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={closeMenu}>
+              Projects
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button className={s.menuButton} onClick={toggleMenu}>
+        {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+      </button>
+    </header>
   );
 };

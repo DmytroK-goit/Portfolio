@@ -1,5 +1,6 @@
 @use "../../scss/mixins" as *;
 .container {
+  scroll-margin-top: 80px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -10,9 +11,13 @@
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   min-height: 500px;
+  width: 100%;
+  max-width: 380px;
   @include media(desktop) {
+    scroll-margin-top: 100px;
     height: auto;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     padding: 40px;
   }
 }
@@ -29,7 +34,9 @@
   justify-content: center;
   margin: 0 auto;
   width: 300px;
+  text-align: center;
   @include media(desktop) {
     width: 800px;
+    text-align: start;
   }
 }
