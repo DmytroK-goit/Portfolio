@@ -5,25 +5,31 @@ import mainPage from "../../../images/Trucks/head.jpg";
 import settings from "../../../images/Trucks/TrackInfo.png";
 export const Trucks = () => {
   return (
-    <div className={s.container}>
-      <h3 className={s.title}>Trucks</h3>
-      <ul className={s.list}>
-        <li>
-          <img src={head} alt="Head page" />
-        </li>
-        <li>
-          <img src={mainPage} alt="mainPage" />
-        </li>
-        <li>
-          <img src={settings} alt="settings" />
-        </li>
-      </ul>
-      <p className={s.parag}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam
-        nam quibusdam libero velit, hic laborum error incidunt voluptatum
-        quisquam aut, impedit rerum molestiae blanditiis architecto ea.
-        Doloremque, saepe sed.
-      </p>
+    <div>
+      <div className={s.container}>
+        <ul className={s.list}>
+          <h3 className={s.title}>Trucks</h3>
+          <li>
+            <img src={head} alt="Head page" />
+          </li>
+          <li>
+            <img src={mainPage} alt="mainPage" />
+          </li>
+          <li>
+            <img src={settings} alt="settings" />
+          </li>
+        </ul>
+        <div>
+          <p className={s.parag}>
+            The React-based application showcases an interface that allows users
+            to search and filter results based on various criteria. It makes API
+            requests to fetch data, providing dynamic content that updates
+            according to user input. This project highlights the integration of
+            external data sources and the practical use of React for building
+            interactive, data-driven applications.
+          </p>
+        </div>
+      </div>
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />

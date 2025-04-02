@@ -36,6 +36,7 @@
   img {
     display: block;
     max-width: 150px;
+    max-height: 150px;
     border-radius: 10px;
   }
 
@@ -45,6 +46,7 @@
     gap: 20px;
     img {
       max-width: 350px;
+      max-height: 350px;
     }
   }
 }

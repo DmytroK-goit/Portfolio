@@ -5,25 +5,31 @@ import mainPage from "../../../images/SparkArt/about.jpg";
 import settings from "../../../images/SparkArt/how.png";
 export const SparkArt = () => {
   return (
-    <div className={s.container}>
-      <h3 className={s.title}>SparkArt </h3>
-      <ul className={s.list}>
-        <li>
-          <img src={head} alt="Head page" />
-        </li>
-        <li>
-          <img src={mainPage} alt="mainPage" />
-        </li>
-        <li>
-          <img src={settings} alt="settings" />
-        </li>
-      </ul>
-      <p className={s.parag}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam
-        nam quibusdam libero velit, hic laborum error incidunt voluptatum
-        quisquam aut, impedit rerum molestiae blanditiis architecto ea.
-        Doloremque, saepe sed.
-      </p>
+    <div>
+      <div className={s.container}>
+        <ul className={s.list}>
+          <h3 className={s.title}>SparkArt</h3>
+          <li>
+            <img src={head} alt="Head page" />
+          </li>
+          <li>
+            <img src={mainPage} alt="mainPage" />
+          </li>
+          <li>
+            <img src={settings} alt="settings" />
+          </li>
+        </ul>
+        <div>
+          <p className={s.parag}>
+            The landing page for Spark Art showcases a creative and visually
+            appealing design focused on presenting the brand's services and
+            offerings. It emphasizes user-friendly navigation and an engaging
+            layout, likely aimed at attracting potential customers or clients.
+            The design is modern, with a clear focus on aesthetics and
+            functionality.
+          </p>
+        </div>
+      </div>{" "}
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />

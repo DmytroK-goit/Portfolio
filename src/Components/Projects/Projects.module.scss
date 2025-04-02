@@ -60,20 +60,20 @@
   justify-content: center;
   gap: 8px;
 
-  img {
-    width: 100px;
-    height: auto;
-    object-fit: cover;
-    box-sizing: border-box;
-  }
+  // img {
+  //   width: 100px;
+  //   height: auto;
+  //   object-fit: cover;
+  //   box-sizing: border-box;
+  // }
 
-  @include media(desktop) {
-    gap: 10px;
+  // @include media(desktop) {
+  //   gap: 10px;
 
-    img {
-      width: auto;
-    }
-  }
+  //   img {
+  //     width: auto;
+  //   }
+  // }
 }
 
 .title {

@@ -5,25 +5,32 @@ import settings from "../../../images/movies/Search.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 export const Movies = () => {
   return (
-    <div className={s.container}>
-      <h3 className={s.title}>Movies</h3>
-      <ul className={s.list}>
-        <li>
-          <img src={head} alt="Head page" />
-        </li>
-        <li>
-          <img src={mainPage} alt="mainPage" />
-        </li>
-        <li>
-          <img src={settings} alt="settings" />
-        </li>
-      </ul>
-      <p className={s.parag}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam
-        nam quibusdam libero velit, hic laborum error incidunt voluptatum
-        quisquam aut, impedit rerum molestiae blanditiis architecto ea.
-        Doloremque, saepe sed.
-      </p>
+    <div>
+      <div className={s.container}>
+        <ul className={s.list}>
+          <h3 className={s.title}>Movies</h3>
+          <li>
+            <img src={head} alt="Head page" />
+          </li>
+          <li>
+            <img src={mainPage} alt="mainPage" />
+          </li>
+          <li>
+            <img src={settings} alt="settings" />
+          </li>
+        </ul>
+        <div>
+          <p className={s.parag}>
+            This project is a React-based application built with Vite, utilizing
+            a public API. It demonstrates modern front-end development
+            practices, including interactive UI components, state management,
+            and data fetching from external sources. The focus is on creating a
+            responsive, user-friendly interface that highlights React skills in
+            real-world scenarios. This project is ideal for showcasing practical
+            experience with APIs and dynamic content handling.
+          </p>
+        </div>
+      </div>
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />

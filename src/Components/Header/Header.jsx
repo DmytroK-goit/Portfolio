@@ -1,6 +1,7 @@
 import { useState } from "react";
 import s from "./Header.module.scss";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Logo } from "../Logo/Logo";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +16,7 @@ export const Header = () => {
 
   return (
     <header className={s.header}>
+      <Logo />
       <nav className={`${s.nav} ${isMenuOpen ? s.open : ""}`}>
         <ul className={s.list}>
           <li>
