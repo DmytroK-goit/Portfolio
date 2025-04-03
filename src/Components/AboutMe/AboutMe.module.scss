@@ -7,36 +7,94 @@
   gap: 40px;
   margin: 0 auto;
   background-color: #27a7a7;
-  height: 400px;
+  min-height: 400px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  min-height: 500px;
   width: 100%;
   max-width: 380px;
+  padding: 10px;
+
   @include media(desktop) {
     scroll-margin-top: 100px;
-    height: auto;
-    width: 100%;
     max-width: 1440px;
     padding: 40px;
   }
 }
+
 .title {
   font-size: 36px;
   text-align: center;
   color: black;
-  @include media(desktop) {
-  }
 }
+
 .information {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   width: 300px;
   text-align: center;
+
   @include media(desktop) {
     width: 800px;
     text-align: start;
+  }
+}
+
+.mySwiperEducation {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 800px;
+    box-sizing: border-box;
+    height: 500px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  // .swiper-slide img {
+  //   width: 100%;
+  //   max-width: 250px;
+  //   height: auto;
+  //   object-fit: contain;
+  //   border-radius: 12px;
+  // }
+
+  @include media(desktop) {
+    .swiper-slide img {
+      max-width: 300px;
+    }
+  }
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.educaion_cont {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  height: 550px;
+}
+
+.swiper.swiper-flip {
+  @include media(desktop) {
+    overflow: auto;
   }
 }

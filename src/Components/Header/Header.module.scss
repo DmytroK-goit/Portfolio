@@ -45,8 +45,9 @@
   height: 100vh;
   background-color: #272727;
   transition: right 0.3s ease-in-out;
-  padding: 80px 20px;
+  padding: 30px 10px;
   z-index: 999;
+  width: 100%;
   &.open {
     right: 0;
   }
@@ -64,7 +65,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 
   a {
     font-size: 18px;
@@ -86,4 +87,10 @@
       letter-spacing: 0.01em;
     }
   }
+}
+.closeButton {
+  display: block;
+  padding: 6px;
+  background-color: inherit;
+  border: none;
 }

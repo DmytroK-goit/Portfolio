@@ -12,16 +12,20 @@ export const Header = () => {
 
   return (
     <header className={s.header}>
-      <Logo />{" "}
+      <Logo />
       <button className={s.menuButton} onClick={toggleMenu}>
         <FiMenu size={24} />
       </button>
+
       <nav className={`${s.nav} ${isMenuOpen ? s.open : ""}`}>
-        <div className={s.closeButton}>
-          <button onClick={() => setIsMenuOpen(false)}>
+        {isMenuOpen && (
+          <button
+            className={s.closeButton}
+            onClick={() => setIsMenuOpen(false)}
+          >
             <FiX size={24} />
           </button>
-        </div>
+        )}
 
         <ul className={s.list}>
           <li>
