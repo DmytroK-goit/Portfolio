@@ -7,9 +7,9 @@ import settings from "../../../images/AquaTrack/settings.jpg";
 export const AquaTrack = () => {
   return (
     <div>
+      <h3 className={s.title}>AquaTrack</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <h3 className={s.title}>AquaTrack</h3>
           <li>
             <img src={head} alt="Head page" />
           </li>

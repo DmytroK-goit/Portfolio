@@ -6,9 +6,10 @@ import { FaHandPointRight } from "react-icons/fa";
 export const Portfolio = () => {
   return (
     <div>
+      {" "}
+      <h3 className={s.title}>Portfolio</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <h3 className={s.title}>Portfolio </h3>
           <li>
             <img src={head} alt="Head page" />
           </li>

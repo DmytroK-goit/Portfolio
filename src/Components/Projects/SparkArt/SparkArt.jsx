@@ -6,9 +6,9 @@ import settings from "../../../images/SparkArt/how.png";
 export const SparkArt = () => {
   return (
     <div>
+      <h3 className={s.title}>SparkArt</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <h3 className={s.title}>SparkArt</h3>
           <li>
             <img src={head} alt="Head page" />
           </li>

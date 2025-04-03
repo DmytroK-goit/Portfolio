@@ -10,40 +10,42 @@ export const Header = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
   return (
     <header className={s.header}>
-      <Logo />
+      <Logo />{" "}
+      <button className={s.menuButton} onClick={toggleMenu}>
+        <FiMenu size={24} />
+      </button>
       <nav className={`${s.nav} ${isMenuOpen ? s.open : ""}`}>
+        <div className={s.closeButton}>
+          <button onClick={() => setIsMenuOpen(false)}>
+            <FiX size={24} />
+          </button>
+        </div>
+
         <ul className={s.list}>
           <li>
-            <a href="#home" onClick={closeMenu}>
+            <a href="#home" onClick={() => setIsMenuOpen(false)}>
               Home
             </a>
           </li>
           <li>
-            <a href="#about" onClick={closeMenu}>
+            <a href="#about" onClick={() => setIsMenuOpen(false)}>
               About Me
             </a>
           </li>
           <li>
-            <a href="#tech" onClick={closeMenu}>
+            <a href="#tech" onClick={() => setIsMenuOpen(false)}>
               My Tech Skills
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={closeMenu}>
+            <a href="#projects" onClick={() => setIsMenuOpen(false)}>
               Projects
             </a>
           </li>
         </ul>
       </nav>
-      <button className={s.menuButton} onClick={toggleMenu}>
-        {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-      </button>
     </header>
   );
 };

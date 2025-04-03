@@ -6,9 +6,9 @@ import settings from "../../../images/Trucks/TrackInfo.png";
 export const Trucks = () => {
   return (
     <div>
+      <h3 className={s.title}>Trucks Campers</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <h3 className={s.title}>Trucks</h3>
           <li>
             <img src={head} alt="Head page" />
           </li>
