@@ -94,7 +94,5 @@ img {
 }
 
 .swiper.swiper-flip {
-  @include media(desktop) {
-    overflow: auto;
-  }
+  overflow: hidden;
 }
