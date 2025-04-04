@@ -9,18 +9,11 @@ import firstPageEdu from "../../images/Certf/certf_page-1.jpg";
 import secondPageEdu from "../../images/Certf/certf_page-2.jpg";
 import thirdPageEdu from "../../images/Certf/certf_page-3.jpg";
 import forthPageEdu from "../../images/Certf/certf_page-4.jpg";
-import { useEffect } from "react";
 
 export const AboutMe = () => {
-  useEffect(() => {
-    const swiperFlip = document.querySelector(".swiper.swiper-flip");
-    if (swiperFlip) {
-      swiperFlip.style.overflow = "hidden";
-    }
-  }, []);
   return (
     <div id="about" className={s.container}>
-      <div>
+      <div className={s.abut_block}>
         <h2 className={s.title}>About Me</h2>
         <p className={s.information}>
           Hi, my name is Dmytro. I’m 37 years old and I’m a Junior Fullstack
@@ -35,7 +28,7 @@ export const AboutMe = () => {
         </p>
       </div>
       <div>
-        <h3>Education</h3>
+        <h3 className={s.title}>My Education</h3>
         <div className={s.educaion_cont}>
           <Swiper
             effect={"flip"}
@@ -46,6 +39,7 @@ export const AboutMe = () => {
             navigation={true}
             modules={[EffectFlip, Pagination, Navigation]}
             className="mySwiperEducation"
+            style={{ overflow: "hidden" }}
           >
             <SwiperSlide>
               <img src={forthPageEdu} />
