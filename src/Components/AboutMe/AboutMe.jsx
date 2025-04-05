@@ -9,8 +9,16 @@ import firstPageEdu from "../../images/Certf/certf_page-1.jpg";
 import secondPageEdu from "../../images/Certf/certf_page-2.jpg";
 import thirdPageEdu from "../../images/Certf/certf_page-3.jpg";
 import forthPageEdu from "../../images/Certf/certf_page-4.jpg";
+import { useEffect, useRef } from "react";
 
 export const AboutMe = () => {
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.update();
+    }
+  }, []);
   return (
     <div id="about" className={s.container}>
       <div className={s.abut_block}>
@@ -29,32 +37,32 @@ export const AboutMe = () => {
       </div>
       <div>
         <h3 className={s.title}>My Education</h3>
-        <div className={s.educaion_cont}>
-          <Swiper
-            effect={"flip"}
-            grabCursor={true}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[EffectFlip, Pagination, Navigation]}
-            className="mySwiperEducation"
-            style={{ overflow: "hidden" }}
-          >
-            <SwiperSlide>
-              <img src={forthPageEdu} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={thirdPageEdu} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={secondPageEdu} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={firstPageEdu} />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+
+        <Swiper
+          ref={swiperRef}
+          effect={"flip"}
+          grabCursor={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[EffectFlip, Pagination, Navigation]}
+          className="mySwiperEducation"
+          style={{ overflow: "hidden" }}
+        >
+          <SwiperSlide>
+            <img src={forthPageEdu} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={thirdPageEdu} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={secondPageEdu} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={firstPageEdu} />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

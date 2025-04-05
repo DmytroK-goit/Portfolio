@@ -28,13 +28,12 @@
 }
 
 .information {
-  font-family: --second-family;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 320px;
-  text-align: center;
+  font-family: var(--second-family);
+  display: block;
+  color: var(--second-color);
   font-size: 14px;
+  text-align: center;
+  padding: 0 6px;
   @include media(desktop) {
     width: 1000px;
     text-align: center;
@@ -61,6 +60,7 @@
 
   @include media(desktop) {
     max-width: 800px;
+    max-height: 500px;
     box-sizing: border-box;
     height: 500px;
   }
@@ -72,15 +72,21 @@
     width: 100%;
     height: auto;
     overflow: visible;
+    @include media(desktop) {
+      max-width: 800px;
+      max-height: 500px;
+      box-sizing: border-box;
+      height: 500px;
+    }
   }
 
-  // .swiper-slide img {
-  //   width: 100%;
-  //   max-width: 250px;
-  //   height: auto;
-  //   object-fit: contain;
-  //   border-radius: 12px;
-  // }
+  .swiper-slide img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+  }
 
   @include media(desktop) {
     .swiper-slide img {
@@ -93,6 +99,13 @@ img {
   height: 100%;
   object-fit: contain;
   border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  @include media(desktop) {
+    max-width: 400px;
+    max-height: auto;
+    box-sizing: border-box;
+  }
 }
 
 .educaion_cont {
