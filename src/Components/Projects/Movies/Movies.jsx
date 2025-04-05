@@ -5,7 +5,7 @@ import settings from "../../../images/movies/Search.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 export const Movies = () => {
   return (
-    <div>
+    <div className={s.block_project}>
       <h3 className={s.title}>Movies App</h3>
       <div className={s.container}>
         <ul className={s.list}>

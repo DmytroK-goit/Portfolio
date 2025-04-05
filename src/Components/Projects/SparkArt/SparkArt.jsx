@@ -5,7 +5,7 @@ import mainPage from "../../../images/SparkArt/about.jpg";
 import settings from "../../../images/SparkArt/how.png";
 export const SparkArt = () => {
   return (
-    <div>
+    <div className={s.block_project}>
       <h3 className={s.title}>SparkArt</h3>
       <div className={s.container}>
         <ul className={s.list}>

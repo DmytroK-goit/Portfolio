@@ -3,11 +3,12 @@ import { SiGmail } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Logo } from "../Logo/Logo";
 export const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={s.footer_cont}>
-        <h2>Portfolio</h2>
+        <Logo />
         <p>© 2025</p>
         <address className={s.address}>
           <ul className={s.address_list}>

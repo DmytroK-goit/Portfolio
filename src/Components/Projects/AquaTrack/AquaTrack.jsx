@@ -6,7 +6,7 @@ import settings from "../../../images/AquaTrack/settings.jpg";
 
 export const AquaTrack = () => {
   return (
-    <div>
+    <div className={s.block_project}>
       <h3 className={s.title}>AquaTrack</h3>
       <div className={s.container}>
         <ul className={s.list}>

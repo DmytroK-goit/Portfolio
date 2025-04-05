@@ -5,7 +5,7 @@ import settings from "../../../images/finance/head inform2.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 export const Finance = () => {
   return (
-    <div>
+    <div className={s.block_project}>
       <h3 className={s.title}>Finance App</h3>
       <div className={s.container}>
         <ul className={s.list}>

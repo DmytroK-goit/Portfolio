@@ -22,13 +22,13 @@
   max-width: 380px;
   @include media(desktop) {
     font-size: 14px;
-    max-width: 1110px;
+    max-width: 1440px;
   }
 }
 .footer_cont {
   display: flex;
   width: 320px;
-  height: 80px;
+  height: 90px;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;

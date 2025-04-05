@@ -2,7 +2,8 @@
 @use "./vars" as *;
 @use "./mixins" as *;
 :root {
-  font-family: "Raleway", sans-serif;
+  // font-family: "Raleway", sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   --second-family: "IBM Plex Mono", sans-serif;
   font-size: 16px;
   line-height: 24px;

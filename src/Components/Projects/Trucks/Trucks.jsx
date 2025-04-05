@@ -5,7 +5,7 @@ import mainPage from "../../../images/Trucks/head.jpg";
 import settings from "../../../images/Trucks/TrackInfo.png";
 export const Trucks = () => {
   return (
-    <div>
+    <div className={s.block_project}>
       <h3 className={s.title}>Trucks Campers</h3>
       <div className={s.container}>
         <ul className={s.list}>

@@ -5,7 +5,7 @@ import settings from "../../../images/portfolio/projects.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 export const Portfolio = () => {
   return (
-    <div>
+    <div className={s.block_project}>
       {" "}
       <h3 className={s.title}>Portfolio</h3>
       <div className={s.container}>
