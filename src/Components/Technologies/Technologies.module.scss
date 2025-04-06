@@ -74,3 +74,15 @@
     height: 170px;
   }
 }
+.title {
+  margin: 0;
+  margin-top: 20px;
+  color: var(--second-color);
+  font-size: 28px;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 48px;
+    text-align: left;
+  }
+}

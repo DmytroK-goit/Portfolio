@@ -4,9 +4,12 @@ import head from "../../../images/AquaTrack/head.jpg";
 import mainPage from "../../../images/AquaTrack/mainPage.jpg";
 import settings from "../../../images/AquaTrack/settings.jpg";
 
-export const AquaTrack = () => {
+export const AquaTrack = ({ fullscreen }) => {
   return (
-    <div className={s.block_project}>
+    <div
+      className={s.block_project}
+      className={fullscreen ? s.fullscreen : s.normal}
+    >
       <h3 className={s.title}>AquaTrack</h3>
       <div className={s.container}>
         <ul className={s.list}>
