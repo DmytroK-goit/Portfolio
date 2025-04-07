@@ -8,7 +8,7 @@ export const AquaTrack = ({ fullscreen }) => {
   return (
     <div
       className={s.block_project}
-      className={fullscreen ? s.fullscreen : s.normal}
+      // className={fullscreen ? s.fullscreen : s.normal}
     >
       <h3 className={s.title}>AquaTrack</h3>
       <div className={s.container}>

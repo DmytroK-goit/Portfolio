@@ -13,14 +13,20 @@ const fadeInVariant = {
 export const Main = () => {
   return (
     <div className={s.container}>
-      <Hero />
-
       <Suspense fallback={<div className={s.loader}>Loading...</div>}>
         <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeInVariant}
           transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <Hero />
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         >
           <AboutMe />
         </motion.div>
@@ -29,7 +35,7 @@ export const Main = () => {
           initial="hidden"
           animate="visible"
           variants={fadeInVariant}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
         >
           <Technologies />
         </motion.div>
@@ -38,7 +44,7 @@ export const Main = () => {
           initial="hidden"
           animate="visible"
           variants={fadeInVariant}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
         >
           <Projects />
         </motion.div>

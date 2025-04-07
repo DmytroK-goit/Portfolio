@@ -23,14 +23,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include media(mobile) {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
   @include media(desktop) {
     width: 1440px;
+    margin: 0 auto;
     height: 100%;
   }
 }
+
 html,
 body {
   width: 100%;
