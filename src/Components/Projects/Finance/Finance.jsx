@@ -26,7 +26,7 @@ export const Finance = () => {
             features for analyzing finances on a monthly and yearly basis,
             adding transactions, and visualizing financial data with charts. The
             platform also includes user registration and authentication for
-            secure access.
+            secure access. The project is currently in active development.
           </p>
         </div>
       </div>
