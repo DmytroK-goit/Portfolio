@@ -7,7 +7,10 @@
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  background-color: #080808;
+  // background-color: #080808;
+  background-image: url(../../images/bgHero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 550px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -41,7 +44,7 @@
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  color: #9c9c9c;
+  color: #cecccc;
   text-align: center;
   margin-top: 20px;
   @include media(desktop) {

@@ -15,7 +15,10 @@
   max-height: 100%;
   width: 100%;
   max-width: 380px;
-  background-color: #f5f5f5;
+  // background-color: #f5f5f5;
+  background-image: url(../../images/bgBlock.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   @include media(desktop) {
     scroll-margin-top: 100px;
     max-width: 1440px;
