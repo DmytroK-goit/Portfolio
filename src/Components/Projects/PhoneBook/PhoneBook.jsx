@@ -10,7 +10,7 @@ export const PhoneBook = () => {
       className={s.block_project}
       // className={fullscreen ? s.fullscreen : s.normal}
     >
-      <h3 className={s.title}>AquaTrack</h3>
+      <h3 className={s.title}>PhoneBook</h3>
       <div className={s.container}>
         <ul className={s.list}>
           <li>
