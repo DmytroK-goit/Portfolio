@@ -40,9 +40,12 @@
   position: fixed;
   top: 0;
   right: -1000%;
-  width: 70%;
+  width: 90%;
   height: 100vh;
-  background-color: #272727;
+  // background-color: #272727;
+  background-image: url(../../images/bgModile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: right 0.3s ease-in-out;
   padding: 30px 10px;
   z-index: 999;
