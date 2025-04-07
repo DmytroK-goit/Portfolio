@@ -11,6 +11,7 @@ import { Movies } from "./Movies/Movies";
 import { Portfolio } from "./Portfolio/Portfolio";
 import { SparkArt } from "./SparkArt/SparkArt";
 import { Trucks } from "./Trucks/Trucks";
+import { PhoneBook } from "./PhoneBook/PhoneBook";
 
 export const Projects = () => {
   const [activeProject, setActiveProject] = useState(null);
@@ -48,6 +49,9 @@ export const Projects = () => {
         <SwiperSlide onClick={() => handleOpenModal("Finance")}>
           <Finance />
         </SwiperSlide>
+        <SwiperSlide onClick={() => handleOpenModal("PhoneBook")}>
+          <PhoneBook />
+        </SwiperSlide>
         <SwiperSlide onClick={() => handleOpenModal("Movies")}>
           <Movies />
         </SwiperSlide>
@@ -70,6 +74,7 @@ export const Projects = () => {
             </button>
             {activeProject === "AquaTrack" && <AquaTrack fullscreen />}
             {activeProject === "Finance" && <Finance fullscreen />}
+            {activeProject === "PhoneBook" && <PhoneBook fullscreen />}
             {activeProject === "Movies" && <Movies fullscreen />}
             {activeProject === "Portfolio" && <Portfolio fullscreen />}
             {activeProject === "SparkArt" && <SparkArt fullscreen />}

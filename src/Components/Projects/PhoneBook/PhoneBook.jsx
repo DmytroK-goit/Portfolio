@@ -1,10 +1,10 @@
 import s from "../IndividualStyles.module.scss";
 import { FaHandPointRight } from "react-icons/fa";
-import head from "../../../images/AquaTrack/head.jpg";
-import mainPage from "../../../images/AquaTrack/mainPage.jpg";
-import settings from "../../../images/AquaTrack/settings.jpg";
+import head from "../../../images/PhoneBook/multiLang.jpg";
+import mainPage from "../../../images/PhoneBook/mainForms.jpg";
+import settings from "../../../images/PhoneBook/contacts.jpg";
 
-export const AquaTrack = () => {
+export const PhoneBook = () => {
   return (
     <div
       className={s.block_project}
@@ -25,12 +25,12 @@ export const AquaTrack = () => {
         </ul>
         <div>
           <p className={s.parag}>
-            Team project. The Aqua Track application is a hydration tracking
-            tool designed to help users monitor and improve their daily water
-            intake. As the Front-End Team Lead for the Aqua Track project, I led
-            the development of the user interface using React, managed the
-            application's state with Redux, and provided support to the
-            development team. Server part is developed with Mongo DB.
+            A full stack application for managing personal contacts. Users can
+            register, add, edit, delete, and view contacts with sorting and
+            filtering options for easier navigation. The app also supports
+            multilingual functionality for a better user experience. All data is
+            securely stored in MongoDB. The frontend is built with React, and
+            the backend uses Node.js and Express to handle RESTful API requests.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ export const AquaTrack = () => {
           href="https://aqua-track-group-01.vercel.app/"
           target="_blank"
         >
-          AquaTrack
+          PhoneBook
         </a>
       </div>
     </div>
