@@ -39,7 +39,7 @@ export const PhoneBook = () => {
         <FaHandPointRight />
         <a
           className={s.but}
-          href="https://aqua-track-group-01.vercel.app/"
+          href="https://phone-book-full-stack.vercel.app/"
           target="_blank"
         >
           PhoneBook
