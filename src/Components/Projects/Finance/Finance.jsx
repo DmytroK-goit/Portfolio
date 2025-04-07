@@ -29,7 +29,7 @@ export const Finance = () => {
             secure access.
           </p>
         </div>
-      </div>{" "}
+      </div>
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
