@@ -147,19 +147,19 @@
     border-radius: 16px;
 
     img {
-      max-width: 550px;
+      max-width: 80%;
       height: auto;
       border-radius: 12px;
       animation: scaleIn 0.3s ease-in-out;
     }
     @include media(mobile) {
       img {
-        max-width: 300px;
+        max-width: 90%;
       }
     }
     @include media(desktop) {
       img {
-        max-width: 500px;
+        max-width: 80%;
       }
     }
     .modalCloseBtn {

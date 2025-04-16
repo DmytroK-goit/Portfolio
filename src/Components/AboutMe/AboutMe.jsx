@@ -24,12 +24,18 @@ export const AboutMe = () => {
       <div className={s.abut_block}>
         <h2 className={s.title}>About Me</h2>
         <p className={s.information}>
-          Hi, I'm Dmytro — a 37-year-old Junior Fullstack Developer with a
-          strong passion for web development. I’m enthusiastic, responsible, and
-          proactive, always eager to learn and grow. I specialize in building
-          responsive and user-friendly interfaces, and for the backend, I work
-          with Node.js and MongoDB. Currently, I'm focused on sharpening my
-          skills and gaining hands-on experience.
+          Hi, I’m a Fullstack Developer with a strong passion for web
+          development. Enthusiastic, responsible, and proactive — I’m always
+          eager to learn and grow. I specialize in building responsive,
+          accessible, and user-friendly interfaces using HTML, CSS, JavaScript,
+          React, Redux, and TypeScript. <br /> On the backend, I work with
+          Node.js, Express, and MongoDB, and I’m familiar with RESTful APIs,
+          authentication (JWT), and cloud services like AWS. I also use tools
+          such as Webpack, Git, and Postman for efficient development and
+          debugging. <br /> I frequently take on the team lead role in projects
+          — coordinating tasks, supporting teammates, and ensuring smooth
+          collaboration. <br /> Currently, I’m focused on sharpening my skills
+          and gaining hands-on experience through real-world projects.
         </p>
       </div>
       <div>
