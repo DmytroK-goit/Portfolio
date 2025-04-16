@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCube, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -14,19 +14,6 @@ import { Trucks } from "./Trucks/Trucks";
 import { PhoneBook } from "./PhoneBook/PhoneBook";
 
 export const Projects = () => {
-  const [activeProject, setActiveProject] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = (project) => {
-    setActiveProject(project);
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setActiveProject(null);
-  };
-
   return (
     <div id="projects" className={s.container}>
       <h2 className={s.title}>Projects</h2>
@@ -43,45 +30,28 @@ export const Projects = () => {
         modules={[EffectCube, Pagination]}
         className={s.mySwiper}
       >
-        <SwiperSlide onClick={() => handleOpenModal("AquaTrack")}>
+        <SwiperSlide>
           <AquaTrack />
         </SwiperSlide>
-        <SwiperSlide onClick={() => handleOpenModal("Finance")}>
+        <SwiperSlide>
           <Finance />
         </SwiperSlide>
-        <SwiperSlide onClick={() => handleOpenModal("PhoneBook")}>
+        <SwiperSlide>
           <PhoneBook />
         </SwiperSlide>
-        <SwiperSlide onClick={() => handleOpenModal("Movies")}>
+        <SwiperSlide>
           <Movies />
         </SwiperSlide>
-        <SwiperSlide onClick={() => handleOpenModal("Portfolio")}>
+        <SwiperSlide>
           <Portfolio />
         </SwiperSlide>
-        <SwiperSlide onClick={() => handleOpenModal("SparkArt")}>
+        <SwiperSlide>
           <SparkArt />
         </SwiperSlide>
-        <SwiperSlide onClick={() => handleOpenModal("Trucks")}>
+        <SwiperSlide>
           <Trucks />
         </SwiperSlide>
       </Swiper>
-
-      {isModalOpen && (
-        <div className={s.modalOverlay} onClick={handleCloseModal}>
-          <div className={s.modalContent} onClick={(e) => e.stopPropagation()}>
-            <button className={s.modalCloseBtn} onClick={handleCloseModal}>
-              ✖
-            </button>
-            {activeProject === "AquaTrack" && <AquaTrack fullscreen />}
-            {activeProject === "Finance" && <Finance fullscreen />}
-            {activeProject === "PhoneBook" && <PhoneBook fullscreen />}
-            {activeProject === "Movies" && <Movies fullscreen />}
-            {activeProject === "Portfolio" && <Portfolio fullscreen />}
-            {activeProject === "SparkArt" && <SparkArt fullscreen />}
-            {activeProject === "Trucks" && <Trucks fullscreen />}
-          </div>
-        </div>
-      )}
     </div>
   );
 };

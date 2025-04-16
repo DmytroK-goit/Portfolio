@@ -3,8 +3,18 @@ import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/PhoneBook/multiLang.jpg";
 import mainPage from "../../../images/PhoneBook/mainForms.jpg";
 import settings from "../../../images/PhoneBook/contacts.jpg";
+import { useState } from "react";
 
 export const PhoneBook = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
+
+  const handleOpenModal = (imgSrc) => {
+    setSelectedImg(imgSrc);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImg(null);
+  };
   return (
     <div
       className={s.block_project}
@@ -13,16 +23,13 @@ export const PhoneBook = () => {
       <h3 className={s.title}>PhoneBook</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <li>
-            <img src={head} alt="Head page" />
-          </li>
-          <li>
-            <img src={mainPage} alt="mainPage" />
-          </li>
-          <li>
-            <img src={settings} alt="settings" />
-          </li>
+          {[head, mainPage, settings].map((imgSrc, index) => (
+            <li key={index} onClick={() => handleOpenModal(imgSrc)}>
+              <img src={imgSrc} alt={`PhoneBook image ${index + 1}`} />
+            </li>
+          ))}
         </ul>
+
         <div>
           <p className={s.parag}>
             A full stack application for managing personal contacts. Users can
@@ -45,6 +52,19 @@ export const PhoneBook = () => {
           PhoneBook
         </a>
       </div>
+      {selectedImg && (
+        <div className={s.modalOverlay} onClick={handleCloseModal}>
+          <div
+            className={s.modalImageWrapper}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className={s.modalCloseBtn} onClick={handleCloseModal}>
+              &times;
+            </button>
+            <img src={selectedImg} alt="Zoomed AquaTrack" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

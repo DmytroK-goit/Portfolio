@@ -12,7 +12,7 @@ export const Hero = () => {
       <div className={s.main_inf}>
         <div className={s.cont_info}>
           <h1 className={s.title}>Dmytro Kovbasiuk</h1>
-          <p className={s.information}>Junior Fullstack Developer</p>
+          <p className={s.information}>Fullstack Developer</p>
         </div>
         <div className={s.container_avatar}>
           <img

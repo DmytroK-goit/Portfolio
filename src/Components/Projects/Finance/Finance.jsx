@@ -3,22 +3,30 @@ import head from "../../../images/finance/head page.jpg";
 import mainPage from "../../../images/finance/head inform.jpg";
 import settings from "../../../images/finance/head inform2.jpg";
 import { FaHandPointRight } from "react-icons/fa";
+import { useState } from "react";
 export const Finance = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
+
+  const handleOpenModal = (imgSrc) => {
+    setSelectedImg(imgSrc);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImg(null);
+  };
+
   return (
     <div className={s.block_project}>
       <h3 className={s.title}>Finance App</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <li>
-            <img src={head} alt="Head page" />
-          </li>
-          <li>
-            <img src={mainPage} alt="mainPage" />
-          </li>
-          <li>
-            <img src={settings} alt="settings" />
-          </li>
+          {[head, mainPage, settings].map((imgSrc, index) => (
+            <li key={index} onClick={() => handleOpenModal(imgSrc)}>
+              <img src={imgSrc} alt={`Finance image ${index + 1}`} />
+            </li>
+          ))}
         </ul>
+
         <div>
           <p className={s.parag}>
             Financial Analyst is a personal full-stack project designed for
@@ -41,6 +49,19 @@ export const Finance = () => {
           Finance APP
         </a>
       </div>
+      {selectedImg && (
+        <div className={s.modalOverlay} onClick={handleCloseModal}>
+          <div
+            className={s.modalImageWrapper}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className={s.modalCloseBtn} onClick={handleCloseModal}>
+              &times;
+            </button>
+            <img src={selectedImg} alt="Zoomed AquaTrack" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

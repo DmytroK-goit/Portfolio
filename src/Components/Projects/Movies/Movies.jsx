@@ -3,22 +3,29 @@ import head from "../../../images/movies/head.jpg";
 import mainPage from "../../../images/movies/movie info.jpg";
 import settings from "../../../images/movies/Search.jpg";
 import { FaHandPointRight } from "react-icons/fa";
+import { useState } from "react";
 export const Movies = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
+
+  const handleOpenModal = (imgSrc) => {
+    setSelectedImg(imgSrc);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImg(null);
+  };
   return (
     <div className={s.block_project}>
       <h3 className={s.title}>Movies App</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <li>
-            <img src={head} alt="Head page" />
-          </li>
-          <li>
-            <img src={mainPage} alt="mainPage" />
-          </li>
-          <li>
-            <img src={settings} alt="settings" />
-          </li>
+          {[head, mainPage, settings].map((imgSrc, index) => (
+            <li key={index} onClick={() => handleOpenModal(imgSrc)}>
+              <img src={imgSrc} alt={`Movies image ${index + 1}`} />
+            </li>
+          ))}
         </ul>
+
         <div>
           <p className={s.parag}>
             This project is a React-based application built with Vite, utilizing
@@ -42,6 +49,19 @@ export const Movies = () => {
           Movies
         </a>
       </div>
+      {selectedImg && (
+        <div className={s.modalOverlay} onClick={handleCloseModal}>
+          <div
+            className={s.modalImageWrapper}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className={s.modalCloseBtn} onClick={handleCloseModal}>
+              &times;
+            </button>
+            <img src={selectedImg} alt="Zoomed AquaTrack" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

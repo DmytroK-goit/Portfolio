@@ -3,25 +3,29 @@ import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/AquaTrack/head.jpg";
 import mainPage from "../../../images/AquaTrack/mainPage.jpg";
 import settings from "../../../images/AquaTrack/settings.jpg";
+import { useState } from "react";
 
 export const AquaTrack = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
+
+  const handleOpenModal = (imgSrc) => {
+    setSelectedImg(imgSrc);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImg(null);
+  };
+
   return (
-    <div
-      className={s.block_project}
-      // className={fullscreen ? s.fullscreen : s.normal}
-    >
+    <div className={s.block_project}>
       <h3 className={s.title}>AquaTrack</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <li>
-            <img src={head} alt="Head page" />
-          </li>
-          <li>
-            <img src={mainPage} alt="mainPage" />
-          </li>
-          <li>
-            <img src={settings} alt="settings" />
-          </li>
+          {[head, mainPage, settings].map((imgSrc, index) => (
+            <li key={index} onClick={() => handleOpenModal(imgSrc)}>
+              <img src={imgSrc} alt={`AquaTrack image ${index + 1}`} />
+            </li>
+          ))}
         </ul>
         <div>
           <p className={s.parag}>
@@ -34,6 +38,7 @@ export const AquaTrack = () => {
           </p>
         </div>
       </div>
+
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
@@ -41,10 +46,26 @@ export const AquaTrack = () => {
           className={s.but}
           href="https://aqua-track-group-01.vercel.app/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           AquaTrack
         </a>
       </div>
+
+      {/* Модальне вікно */}
+      {selectedImg && (
+        <div className={s.modalOverlay} onClick={handleCloseModal}>
+          <div
+            className={s.modalImageWrapper}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className={s.modalCloseBtn} onClick={handleCloseModal}>
+              &times;
+            </button>
+            <img src={selectedImg} alt="Zoomed AquaTrack" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
