@@ -131,7 +131,7 @@
 .modalOverlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,8 +141,8 @@
 
   .modalImageWrapper {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
     overflow: hidden;
     border-radius: 16px;
 
@@ -154,22 +154,25 @@
     }
     @include media(mobile) {
       img {
-        max-width: 90%;
+        max-width: 100%;
       }
     }
     @include media(desktop) {
       img {
-        max-width: 80%;
+        max-width: 60%;
       }
     }
     .modalCloseBtn {
       position: absolute;
-      top: 12px;
-      right: 16px;
+      top: 5px;
+      right: 5px;
       background: none;
       border: none;
       font-size: 1.8rem;
-      color: #7c7979;
+      color: #1b1b1b;
+      border: 1px solid green;
+      background-color: #3f8e00;
+
       cursor: pointer;
       transition: transform 0.2s;
 

@@ -38,7 +38,6 @@ export const AquaTrack = () => {
           </p>
         </div>
       </div>
-
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
@@ -51,8 +50,6 @@ export const AquaTrack = () => {
           AquaTrack
         </a>
       </div>
-
-      {/* Модальне вікно */}
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>
           <div
