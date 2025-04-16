@@ -14,10 +14,10 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  min-width: 320px;
-  max-width: 380px;
+  // min-width: 320px;
+  width: 380px;
   @include media(desktop) {
-    max-width: 1440px;
+    width: 1440px;
     height: 70px;
     border-radius: 0 0 8px 8px;
   }
@@ -78,10 +78,10 @@
 
   @include media(desktop) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    width: 800px;
+    gap: 100px;
+    width: 100%;
 
     a {
       font-size: 14px;
