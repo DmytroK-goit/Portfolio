@@ -3,7 +3,7 @@ import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/SparkArt/main.jpg";
 import mainPage from "../../../images/SparkArt/about.jpg";
 import settings from "../../../images/SparkArt/how.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export const SparkArt = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -14,6 +14,24 @@ export const SparkArt = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      console.log(e.key);
+
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    if (selectedImg) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImg]);
+
   return (
     <div className={s.block_project}>
       <h3 className={s.title}>SparkArt</h3>

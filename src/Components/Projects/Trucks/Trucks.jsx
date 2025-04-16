@@ -3,7 +3,7 @@ import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/Trucks/main_page.jpg";
 import mainPage from "../../../images/Trucks/head.jpg";
 import settings from "../../../images/Trucks/TrackInfo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export const Trucks = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -14,6 +14,23 @@ export const Trucks = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      console.log(e.key);
+
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    if (selectedImg) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImg]);
   return (
     <div className={s.block_project}>
       <h3 className={s.title}>Trucks Campers</h3>

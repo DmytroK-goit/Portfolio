@@ -3,7 +3,7 @@ import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/AquaTrack/head.jpg";
 import mainPage from "../../../images/AquaTrack/mainPage.jpg";
 import settings from "../../../images/AquaTrack/settings.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const AquaTrack = () => {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -15,6 +15,23 @@ export const AquaTrack = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      console.log(e.key);
+
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    if (selectedImg) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImg]);
 
   return (
     <div className={s.block_project}>

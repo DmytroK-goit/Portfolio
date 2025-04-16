@@ -3,7 +3,7 @@ import head from "../../../images/portfolio/head_info.jpg";
 import mainPage from "../../../images/portfolio/foto.jpg";
 import settings from "../../../images/portfolio/projects.jpg";
 import { FaHandPointRight } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export const Portfolio = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -14,6 +14,23 @@ export const Portfolio = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      console.log(e.key);
+
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    if (selectedImg) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImg]);
   return (
     <div className={s.block_project}>
       {" "}

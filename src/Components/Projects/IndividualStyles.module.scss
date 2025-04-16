@@ -168,13 +168,15 @@
       right: 5px;
       background: none;
       border: none;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #1b1b1b;
       border: 1px solid green;
       background-color: #3f8e00;
-
+      width: 30px;
+      height: 30px;
       cursor: pointer;
       transition: transform 0.2s;
+      border-radius: 6px;
 
       &:hover {
         transform: scale(1.2);

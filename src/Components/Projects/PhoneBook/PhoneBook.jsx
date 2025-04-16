@@ -3,7 +3,7 @@ import { FaHandPointRight } from "react-icons/fa";
 import head from "../../../images/PhoneBook/multiLang.jpg";
 import mainPage from "../../../images/PhoneBook/mainForms.jpg";
 import settings from "../../../images/PhoneBook/contacts.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const PhoneBook = () => {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -15,6 +15,23 @@ export const PhoneBook = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      console.log(e.key);
+
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    if (selectedImg) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImg]);
   return (
     <div
       className={s.block_project}

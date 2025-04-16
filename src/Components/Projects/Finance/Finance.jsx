@@ -3,7 +3,7 @@ import head from "../../../images/finance/head page.jpg";
 import mainPage from "../../../images/finance/head inform.jpg";
 import settings from "../../../images/finance/head inform2.jpg";
 import { FaHandPointRight } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export const Finance = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -14,6 +14,23 @@ export const Finance = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      console.log(e.key);
+
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    if (selectedImg) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImg]);
 
   return (
     <div className={s.block_project}>

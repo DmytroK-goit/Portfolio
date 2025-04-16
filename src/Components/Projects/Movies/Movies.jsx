@@ -3,7 +3,7 @@ import head from "../../../images/movies/head.jpg";
 import mainPage from "../../../images/movies/movie info.jpg";
 import settings from "../../../images/movies/Search.jpg";
 import { FaHandPointRight } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export const Movies = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -14,7 +14,23 @@ export const Movies = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
-  return (
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      console.log(e.key);
+
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    if (selectedImg) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImg]); return (
     <div className={s.block_project}>
       <h3 className={s.title}>Movies App</h3>
       <div className={s.container}>
