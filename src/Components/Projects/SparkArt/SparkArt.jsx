@@ -4,9 +4,9 @@ import head from "../../../images/SparkArt/main.jpg";
 import mainPage from "../../../images/SparkArt/about.jpg";
 import settings from "../../../images/SparkArt/how.png";
 import { useEffect, useState } from "react";
+import { VscChromeClose } from "react-icons/vsc";
 export const SparkArt = () => {
   const [selectedImg, setSelectedImg] = useState(null);
-
   const handleOpenModal = (imgSrc) => {
     setSelectedImg(imgSrc);
   };
@@ -14,23 +14,23 @@ export const SparkArt = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      console.log(e.key);
+   useEffect(() => {
+     const handleKeyDown = (e) => {
+       if (e.key === "Escape") {
+         handleCloseModal();
+       }
+     };
 
-      if (e.key === "Escape") {
-        handleCloseModal();
-      }
-    };
+     if (selectedImg) {
+       document.addEventListener("keydown", handleKeyDown);
+       document.body.style.overflow = "hidden";
+     }
 
-    if (selectedImg) {
-      window.addEventListener("keydown", handleKeyDown);
-    }
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [selectedImg]);
+     return () => {
+       document.removeEventListener("keydown", handleKeyDown);
+       document.body.style.overflow = "";
+     };
+   }, [selectedImg]);
 
   return (
     <div className={s.block_project}>
@@ -73,7 +73,7 @@ export const SparkArt = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button className={s.modalCloseBtn} onClick={handleCloseModal}>
-              &times;
+              <VscChromeClose />
             </button>
             <img src={selectedImg} alt="Zoomed AquaTrack" />
           </div>

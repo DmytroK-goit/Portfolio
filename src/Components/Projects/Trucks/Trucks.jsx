@@ -4,6 +4,7 @@ import head from "../../../images/Trucks/main_page.jpg";
 import mainPage from "../../../images/Trucks/head.jpg";
 import settings from "../../../images/Trucks/TrackInfo.png";
 import { useEffect, useState } from "react";
+import { VscChromeClose } from "react-icons/vsc";
 export const Trucks = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -16,19 +17,19 @@ export const Trucks = () => {
   };
   useEffect(() => {
     const handleKeyDown = (e) => {
-      console.log(e.key);
-
       if (e.key === "Escape") {
         handleCloseModal();
       }
     };
 
     if (selectedImg) {
-      window.addEventListener("keydown", handleKeyDown);
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
     }
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
     };
   }, [selectedImg]);
   return (
@@ -72,7 +73,7 @@ export const Trucks = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button className={s.modalCloseBtn} onClick={handleCloseModal}>
-              &times;
+              <VscChromeClose />
             </button>
             <img src={selectedImg} alt="Zoomed AquaTrack" />
           </div>

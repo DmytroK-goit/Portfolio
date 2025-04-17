@@ -4,6 +4,7 @@ import head from "../../../images/AquaTrack/head.jpg";
 import mainPage from "../../../images/AquaTrack/mainPage.jpg";
 import settings from "../../../images/AquaTrack/settings.jpg";
 import { useEffect, useState } from "react";
+import { VscChromeClose } from "react-icons/vsc";
 
 export const AquaTrack = () => {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -17,19 +18,19 @@ export const AquaTrack = () => {
   };
   useEffect(() => {
     const handleKeyDown = (e) => {
-      console.log(e.key);
-
       if (e.key === "Escape") {
         handleCloseModal();
       }
     };
 
     if (selectedImg) {
-      window.addEventListener("keydown", handleKeyDown);
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
     }
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
     };
   }, [selectedImg]);
 
@@ -74,7 +75,7 @@ export const AquaTrack = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button className={s.modalCloseBtn} onClick={handleCloseModal}>
-              &times;
+              <VscChromeClose />
             </button>
             <img src={selectedImg} alt="Zoomed AquaTrack" />
           </div>

@@ -4,6 +4,7 @@ import mainPage from "../../../images/portfolio/foto.jpg";
 import settings from "../../../images/portfolio/projects.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { VscChromeClose } from "react-icons/vsc";
 export const Portfolio = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -16,19 +17,19 @@ export const Portfolio = () => {
   };
   useEffect(() => {
     const handleKeyDown = (e) => {
-      console.log(e.key);
-
       if (e.key === "Escape") {
         handleCloseModal();
       }
     };
 
     if (selectedImg) {
-      window.addEventListener("keydown", handleKeyDown);
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
     }
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
     };
   }, [selectedImg]);
   return (
@@ -73,7 +74,7 @@ export const Portfolio = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button className={s.modalCloseBtn} onClick={handleCloseModal}>
-              &times;
+              <VscChromeClose />
             </button>
             <img src={selectedImg} alt="Zoomed AquaTrack" />
           </div>

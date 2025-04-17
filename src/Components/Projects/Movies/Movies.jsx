@@ -4,6 +4,8 @@ import mainPage from "../../../images/movies/movie info.jpg";
 import settings from "../../../images/movies/Search.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { VscChromeClose } from "react-icons/vsc";
+
 export const Movies = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -16,21 +18,22 @@ export const Movies = () => {
   };
   useEffect(() => {
     const handleKeyDown = (e) => {
-      console.log(e.key);
-
       if (e.key === "Escape") {
         handleCloseModal();
       }
     };
 
     if (selectedImg) {
-      window.addEventListener("keydown", handleKeyDown);
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
     }
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
     };
-  }, [selectedImg]); return (
+  }, [selectedImg]);
+  return (
     <div className={s.block_project}>
       <h3 className={s.title}>Movies App</h3>
       <div className={s.container}>
@@ -72,7 +75,7 @@ export const Movies = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button className={s.modalCloseBtn} onClick={handleCloseModal}>
-              &times;
+              <VscChromeClose />
             </button>
             <img src={selectedImg} alt="Zoomed AquaTrack" />
           </div>

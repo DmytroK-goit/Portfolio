@@ -4,7 +4,7 @@ import head from "../../../images/PhoneBook/multiLang.jpg";
 import mainPage from "../../../images/PhoneBook/mainForms.jpg";
 import settings from "../../../images/PhoneBook/contacts.jpg";
 import { useEffect, useState } from "react";
-
+import { VscChromeClose } from "react-icons/vsc";
 export const PhoneBook = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -17,19 +17,19 @@ export const PhoneBook = () => {
   };
   useEffect(() => {
     const handleKeyDown = (e) => {
-      console.log(e.key);
-
       if (e.key === "Escape") {
         handleCloseModal();
       }
     };
 
     if (selectedImg) {
-      window.addEventListener("keydown", handleKeyDown);
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
     }
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
     };
   }, [selectedImg]);
   return (
@@ -76,7 +76,7 @@ export const PhoneBook = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button className={s.modalCloseBtn} onClick={handleCloseModal}>
-              &times;
+              <VscChromeClose />
             </button>
             <img src={selectedImg} alt="Zoomed AquaTrack" />
           </div>
