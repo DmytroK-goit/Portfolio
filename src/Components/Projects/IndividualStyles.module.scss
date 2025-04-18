@@ -114,8 +114,12 @@
     }
 
     &:hover {
-      transform: scale(1.41);
+      transform: scale(1.21);
+       @include media(desktop) {
+         transform: scale(1.41);
+      }
     }
+    
   }
 
   @include media(desktop) {
