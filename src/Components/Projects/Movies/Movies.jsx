@@ -38,9 +38,13 @@ export const Movies = () => {
       <h3 className={s.title}>Movies App</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          {[head, mainPage, settings].map((imgSrc, index) => (
-            <li key={index} onClick={() => handleOpenModal(imgSrc)}>
-              <img src={imgSrc} alt={`Movies image ${index + 1}`} />
+          {[head].map((imgSrc, index) => (
+            <li key={index}>
+              <img
+                className={s.project_img}
+                src={imgSrc}
+                alt={`Movies image ${index + 1}`}
+              />
             </li>
           ))}
         </ul>

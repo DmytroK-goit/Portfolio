@@ -14,32 +14,36 @@ export const SparkArt = () => {
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
-   useEffect(() => {
-     const handleKeyDown = (e) => {
-       if (e.key === "Escape") {
-         handleCloseModal();
-       }
-     };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
 
-     if (selectedImg) {
-       document.addEventListener("keydown", handleKeyDown);
-       document.body.style.overflow = "hidden";
-     }
+    if (selectedImg) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
+    }
 
-     return () => {
-       document.removeEventListener("keydown", handleKeyDown);
-       document.body.style.overflow = "";
-     };
-   }, [selectedImg]);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [selectedImg]);
 
   return (
     <div className={s.block_project}>
       <h3 className={s.title}>SparkArt</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          {[head, mainPage, settings].map((imgSrc, index) => (
-            <li key={index} onClick={() => handleOpenModal(imgSrc)}>
-              <img src={imgSrc} alt={`SparkArt image ${index + 1}`} />
+          {[head].map((imgSrc, index) => (
+            <li key={index}>
+              <img
+                className={s.project_img}
+                src={imgSrc}
+                alt={`SparkArt image ${index + 1}`}
+              />
             </li>
           ))}
         </ul>

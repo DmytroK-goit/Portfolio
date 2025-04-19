@@ -2,14 +2,19 @@
 
 .container {
   display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   border-radius: 12px;
-
+  flex-direction: column;
   @include media(desktop) {
-    flex-direction: column;
+    margin-top: 20px;
+    flex-direction: row;
     height: 100%;
     border-radius: 16px;
+    gap: 16px;
   }
 }
 
@@ -20,6 +25,7 @@
   color: var(--second-color);
 
   @include media(desktop) {
+    padding-top: 10px;
     font-size: 30px;
   }
 }
@@ -31,12 +37,13 @@
   font-size: 14px;
   text-align: center;
   padding: 0 6px;
-  width: 220px;
+  width: 320px;
   @include media(desktop) {
-    font-size: 16px;
-    width: 1000px;
+    font-size: 18px;
+    width: 700px;
     margin: 0 auto;
     padding: 0;
+    text-align: left;
   }
 }
 
@@ -92,6 +99,9 @@
   display: flex;
   justify-content: end;
   flex-direction: column;
+  @include media(desktop) {
+    justify-content: space-between;
+  }
 }
 .list {
   padding: 0;
@@ -100,45 +110,40 @@
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-
+  margin: 0;
   li {
     cursor: pointer;
     overflow: hidden;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    img {
-      display: block;
-      width: 150px;
-      max-height: 150px;
-      border-radius: 10px;
-    }
-
     &:hover {
-      transform: scale(1.41);
+      transform: scale(1.11);
     }
   }
 
   @include media(desktop) {
     gap: 20px;
-
-    li img {
-      width: 400px;
-      max-height: 400px;
-    }
   }
 }
+.project_img {
+  display: block;
+  border: 12px;
+  width: 320px;
 
+  @include media(desktop) {
+    width: 550px;
+    max-height: 380px;
+  }
+}
 .modalOverlay {
   position: fixed;
-  // inset: 0;
-  // background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  // z-index: 100;
   animation: fadeIn 0.3s ease-in-out;
   cursor: pointer;
+
   @keyframes fadeIn {
     from {
       opacity: 0;
