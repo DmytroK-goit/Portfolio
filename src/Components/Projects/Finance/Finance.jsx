@@ -34,7 +34,7 @@ export const Finance = () => {
   }, [selectedImg]);
 
   return (
-    <div className={s.block_project}>
+    <div className={(s.block_project, s.finance)}>
       <h3 className={s.title}>Finance App</h3>
       <div className={s.container}>
         <ul className={s.list}>

@@ -34,7 +34,7 @@ export const Movies = () => {
     };
   }, [selectedImg]);
   return (
-    <div className={s.block_project}>
+    <div className={(s.block_project, s.movies)}>
       <h3 className={s.title}>Movies App</h3>
       <div className={s.container}>
         <ul className={s.list}>

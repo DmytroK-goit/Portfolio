@@ -33,7 +33,7 @@ export const Portfolio = () => {
     };
   }, [selectedImg]);
   return (
-    <div className={s.block_project}>
+    <div className={(s.block_project, s.portfolio)}>
       {" "}
       <h3 className={s.title}>Portfolio</h3>
       <div className={s.container}>

@@ -33,7 +33,7 @@ export const Trucks = () => {
     };
   }, [selectedImg]);
   return (
-    <div className={s.block_project}>
+    <div className={(s.block_project, s.trucks)}>
       <h3 className={s.title}>Trucks Campers</h3>
       <div className={s.container}>
         <ul className={s.list}>
