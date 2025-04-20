@@ -205,7 +205,7 @@
 .project_img {
   display: block;
   border: 12px;
-  width: 320px;
+  max-width: 280px;
 
   @include media(desktop) {
     width: 550px;
