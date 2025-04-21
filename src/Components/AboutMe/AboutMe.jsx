@@ -10,6 +10,7 @@ import secondPageEdu from "../../images/Certf/certf_page-2.jpg";
 import thirdPageEdu from "../../images/Certf/certf_page-3.jpg";
 import forthPageEdu from "../../images/Certf/certf_page-4.jpg";
 import { useEffect, useRef } from "react";
+import ShinyText from "../ShinyText/ShinyText";
 
 export const AboutMe = () => {
   const swiperRef = useRef(null);
@@ -22,7 +23,10 @@ export const AboutMe = () => {
   return (
     <div id="about" className={s.container}>
       <div className={s.abut_block}>
-        <h2 className={s.title}>About Me</h2>
+        <ShinyText>
+          <h2 className={s.title}>About Me</h2>
+        </ShinyText>
+
         <div className={s.information}>
           <p>
             Hi, I’m a Fullstack Developer with a strong passion for web
@@ -48,7 +52,10 @@ export const AboutMe = () => {
         </div>
       </div>
       <div>
-        <h3 className={s.title}>My Education</h3>
+        <ShinyText>
+          <h3 className={s.title}>My Education</h3>
+        </ShinyText>
+        
 
         <Swiper
           ref={swiperRef}
