@@ -26,7 +26,6 @@ export const AboutMe = () => {
         <ShinyText>
           <h2 className={s.title}>About Me</h2>
         </ShinyText>
-
         <div className={s.information}>
           <p>
             Hi, I’m a Fullstack Developer with a strong passion for web
@@ -55,7 +54,6 @@ export const AboutMe = () => {
         <ShinyText>
           <h3 className={s.title}>My Education</h3>
         </ShinyText>
-        
 
         <Swiper
           ref={swiperRef}
