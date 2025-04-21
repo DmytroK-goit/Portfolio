@@ -8,25 +8,11 @@ import github from "../../images/svg/contacts/github-icon-2.svg";
 import SplitText from "../SplitText/SplitText";
 
 export const Hero = () => {
-  const handleAnimationComplete = () => {
-    console.log("All letters have animated!");
-  };
   return (
     <div id="home" className={s.container}>
       <div className={s.main_inf}>
         <div className={s.cont_info}>
-          <SplitText
-            text="Dmytro Kovbasiuk"
-            className={`${s.title}`}
-            delay={150}
-            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-            easing="easeOutCubic"
-            threshold={0.2}
-            rootMargin="-50px"
-            onLetterAnimationComplete={handleAnimationComplete}
-          />
-          {/* <h1 className={s.title}>Dmytro Kovbasiuk</h1> */}
+          <h1 className={s.title}>Dmytro Kovbasiuk</h1>
 
           <p className={s.information}>Fullstack Developer</p>
         </div>
