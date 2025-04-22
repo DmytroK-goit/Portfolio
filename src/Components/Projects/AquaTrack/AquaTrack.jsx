@@ -5,7 +5,7 @@ import mainPage from "../../../images/AquaTrack/mainPage.jpg";
 import settings from "../../../images/AquaTrack/settings.jpg";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
-
+import { motion } from "framer-motion";
 export const AquaTrack = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -63,14 +63,23 @@ export const AquaTrack = () => {
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
-        <a
+        <motion.a
           className={s.but}
           href="https://aqua-track-group-01.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.05, 0.95, 1.05, 1],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
         >
           AquaTrack
-        </a>
+        </motion.a>
       </div>
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>
