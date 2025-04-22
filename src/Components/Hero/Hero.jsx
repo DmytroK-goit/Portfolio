@@ -5,7 +5,6 @@ import telegram from "../../images/svg/contacts/telegram-1.svg";
 import linkedin from "../../images/svg/contacts/linkedin-icon.svg";
 import gmail from "../../images/svg/contacts/gmail-icon-1.svg";
 import github from "../../images/svg/contacts/github-icon-2.svg";
-import SplitText from "../SplitText/SplitText";
 
 export const Hero = () => {
   return (
