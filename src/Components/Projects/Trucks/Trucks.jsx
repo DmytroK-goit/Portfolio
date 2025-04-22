@@ -5,6 +5,7 @@ import mainPage from "../../../images/Trucks/head.jpg";
 import settings from "../../../images/Trucks/TrackInfo.png";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
+import { motion } from "framer-motion";
 export const Trucks = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -62,13 +63,23 @@ export const Trucks = () => {
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
-        <a
-          href="https://travel-trucks-wine.vercel.app/"
+        <motion.a
           className={s.but}
+          href="https://travel-trucks-wine.vercel.app/"
           target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.05, 0.95, 1.05, 1],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
         >
-          Trucks
-        </a>
+          Trucks Сampers
+        </motion.a>
       </div>
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>

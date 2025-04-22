@@ -5,6 +5,7 @@ import mainPage from "../../../images/SparkArt/about.jpg";
 import settings from "../../../images/SparkArt/how.png";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
+import { motion } from "framer-motion";
 export const SparkArt = () => {
   const [selectedImg, setSelectedImg] = useState(null);
   const handleOpenModal = (imgSrc) => {
@@ -62,13 +63,23 @@ export const SparkArt = () => {
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
-        <a
-          href="https://dmytrok-goit.github.io/stp-7973/"
+        <motion.a
           className={s.but}
+          href="https://dmytrok-goit.github.io/stp-7973/"
           target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.05, 0.95, 1.05, 1],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
         >
           SparkArt
-        </a>
+        </motion.a>
       </div>
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>

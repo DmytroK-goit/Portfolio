@@ -5,6 +5,7 @@ import settings from "../../../images/finance/head inform2.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
+import { motion } from "framer-motion";
 export const Finance = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -63,13 +64,23 @@ export const Finance = () => {
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
-        <a
-          href="https://financial-analyst.vercel.app/"
+        <motion.a
           className={s.but}
+          href="https://financial-analyst.vercel.app/"
           target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.05, 0.95, 1.05, 1],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
         >
           Finance APP
-        </a>
+        </motion.a>
       </div>
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>

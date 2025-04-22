@@ -5,6 +5,7 @@ import mainPage from "../../../images/PhoneBook/mainForms.jpg";
 import settings from "../../../images/PhoneBook/contacts.jpg";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
+import { motion } from "framer-motion";
 export const PhoneBook = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -65,13 +66,23 @@ export const PhoneBook = () => {
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
-        <a
+        <motion.a
           className={s.but}
           href="https://phone-book-full-stack.vercel.app/"
           target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.05, 0.95, 1.05, 1],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
         >
           PhoneBook
-        </a>
+        </motion.a>
       </div>
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>

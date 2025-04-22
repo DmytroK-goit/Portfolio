@@ -5,6 +5,7 @@ import settings from "../../../images/movies/Search.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
+import { motion } from "framer-motion";
 
 export const Movies = () => {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -64,13 +65,23 @@ export const Movies = () => {
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
-        <a
+        <motion.a
           className={s.but}
           href="https://goit-react-hw-05-three-beige.vercel.app/"
           target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.05, 0.95, 1.05, 1],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
         >
           Movies
-        </a>
+        </motion.a>
       </div>
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>

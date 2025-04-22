@@ -5,6 +5,7 @@ import settings from "../../../images/portfolio/projects.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
+import { motion } from "framer-motion";
 export const Portfolio = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -63,13 +64,23 @@ export const Portfolio = () => {
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
-        <a
+        <motion.a
           className={s.but}
           href="https://dmytrok-goit.github.io/project-js-group02/"
           target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.05, 0.95, 1.05, 1],
+          }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
         >
           Portfolio
-        </a>
+        </motion.a>
       </div>
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>
