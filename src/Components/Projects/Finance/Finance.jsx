@@ -1,5 +1,6 @@
 import s from "../IndividualStyles.module.scss";
-import head from "../../../images/finance/head page.jpg";
+// import head from "../../../images/finance/head page.jpg";
+import head from "../../../images/finance/finace_app.jpg";
 import mainPage from "../../../images/finance/head inform.jpg";
 import settings from "../../../images/finance/head inform2.jpg";
 import { FaHandPointRight } from "react-icons/fa";
