@@ -33,7 +33,7 @@ export const AquaTrack = () => {
   }, [selectedImg]);
 
   return (
-    <div className={(s.block_project, s.aquaTrack)}>
+    <div className={`${s.block_project} ${s.aquaTrack}`}>
       <h3 className={s.title}>AquaTrack</h3>
       <div className={s.container}>
         <ul className={s.list}>
