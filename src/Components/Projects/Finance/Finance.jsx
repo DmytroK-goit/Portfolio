@@ -39,7 +39,7 @@ export const Finance = () => {
         <ul className={s.list}>
           <img
             className={s.project_img}
-            src="/public/finance/finace_app.jpg"
+            src="/finance/finace_app.jpg"
             alt="Finance image"
           />
         </ul>
