@@ -37,11 +37,13 @@ export const Finance = () => {
       <h3 className={s.title}>Finance App</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          <img
-            className={s.project_img}
-            src="/finance/finace_app.jpg"
-            alt="Finance image"
-          />
+          <li>
+            <img
+              className={s.project_img}
+              src="/finance/finace_app.jpg"
+              alt="Finance image"
+            />
+          </li>
         </ul>
 
         <div>

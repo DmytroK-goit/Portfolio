@@ -1,8 +1,6 @@
 import s from "../IndividualStyles.module.scss";
 import { FaHandPointRight } from "react-icons/fa";
-import head from "../../../images/AquaTrack/head.jpg";
-import mainPage from "../../../images/AquaTrack/mainPage.jpg";
-import settings from "../../../images/AquaTrack/settings.jpg";
+
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
@@ -39,15 +37,13 @@ export const AquaTrack = () => {
       <h3 className={s.title}>AquaTrack</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          {[head].map((imgSrc, index) => (
-            <li key={index}>
-              <img
-                className={s.project_img}
-                src={imgSrc}
-                alt={`AquaTrack image ${index + 1}`}
-              />
-            </li>
-          ))}
+          <li>
+            <img
+              className={s.project_img}
+              src="/AquaTrack/head.jpg"
+              alt="AquaTrack image"
+            />
+          </li>
         </ul>
         <div>
           <p className={s.parag}>

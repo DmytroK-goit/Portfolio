@@ -1,8 +1,5 @@
 import s from "../IndividualStyles.module.scss";
 import { FaHandPointRight } from "react-icons/fa";
-import head from "../../../images/PhoneBook/multiLang.jpg";
-import mainPage from "../../../images/PhoneBook/mainForms.jpg";
-import settings from "../../../images/PhoneBook/contacts.jpg";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
@@ -41,15 +38,13 @@ export const PhoneBook = () => {
       <h3 className={s.title}>PhoneBook</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          {[mainPage].map((imgSrc, index) => (
-            <li key={index}>
-              <img
-                className={s.project_img}
-                src={imgSrc}
-                alt={`PhoneBook image ${index + 1}`}
-              />
-            </li>
-          ))}
+          <li>
+            <img
+              className={s.project_img}
+              src="/public/PhoneBook/mainForms.jpg"
+              alt="PhoneBook image"
+            />
+          </li>
         </ul>
 
         <div>

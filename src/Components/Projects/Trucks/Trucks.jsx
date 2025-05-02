@@ -38,15 +38,13 @@ export const Trucks = () => {
       <h3 className={s.title}>Trucks Campers</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          {[mainPage].map((imgSrc, index) => (
-            <li key={index}>
-              <img
-                className={s.project_img}
-                src={imgSrc}
-                alt={`Trucks image ${index + 1}`}
-              />
-            </li>
-          ))}
+          <li>
+            <img
+              className={s.project_img}
+              src="/Trucks/head.jpg"
+              alt="Trucks Campers image"
+            />
+          </li>
         </ul>
 
         <div>

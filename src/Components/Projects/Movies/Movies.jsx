@@ -1,7 +1,4 @@
 import s from "../IndividualStyles.module.scss";
-import head from "../../../images/movies/head.jpg";
-import mainPage from "../../../images/movies/movie info.jpg";
-import settings from "../../../images/movies/Search.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
@@ -39,15 +36,13 @@ export const Movies = () => {
       <h3 className={s.title}>Movies App</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          {[head].map((imgSrc, index) => (
-            <li key={index}>
-              <img
-                className={s.project_img}
-                src={imgSrc}
-                alt={`Movies image ${index + 1}`}
-              />
-            </li>
-          ))}
+          <li>
+            <img
+              className={s.project_img}
+              src="/movies/head.jpg"
+              alt="Movies image"
+            />
+          </li>
         </ul>
 
         <div>

@@ -1,7 +1,4 @@
 import s from "../IndividualStyles.module.scss";
-import head from "../../../images/portfolio/head_info.jpg";
-import mainPage from "../../../images/portfolio/foto.jpg";
-import settings from "../../../images/portfolio/projects.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
@@ -39,15 +36,13 @@ export const Portfolio = () => {
       <h3 className={s.title}>Portfolio</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          {[head].map((imgSrc, index) => (
-            <li key={index}>
-              <img
-                className={s.project_img}
-                src={imgSrc}
-                alt={`Portfolio image ${index + 1}`}
-              />
-            </li>
-          ))}
+          <li>
+            <img
+              className={s.project_img}
+              src="/portfolio/head_info.jpg"
+              alt="Portfolio image"
+            />
+          </li>
         </ul>
 
         <div>
