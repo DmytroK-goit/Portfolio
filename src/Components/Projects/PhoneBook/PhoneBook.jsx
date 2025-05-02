@@ -31,10 +31,7 @@ export const PhoneBook = () => {
     };
   }, [selectedImg]);
   return (
-    <div
-      className={(s.block_project, s.phoneBook)}
-      // className={fullscreen ? s.fullscreen : s.normal}
-    >
+    <div className={`${s.block_project} ${s.phoneBook}`}>
       <h3 className={s.title}>PhoneBook</h3>
       <div className={s.container}>
         <img

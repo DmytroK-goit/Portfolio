@@ -31,7 +31,7 @@ export const SparkArt = () => {
   }, [selectedImg]);
 
   return (
-    <div className={(s.block_project, s.sparkart)}>
+    <div className={`${s.block_project} ${s.sparkart}`}>
       <h3 className={s.title}>SparkArt</h3>
       <div className={s.container}>
         <img
