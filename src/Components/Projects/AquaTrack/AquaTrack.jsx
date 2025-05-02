@@ -40,6 +40,8 @@ export const AquaTrack = () => {
           <li>
             <img
               className={s.project_img}
+              loading="lazy"
+              width="550"
               src="/AquaTrack/head.jpg"
               alt="AquaTrack image"
             />
