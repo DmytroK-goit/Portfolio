@@ -43,9 +43,9 @@ export const AquaTrack = () => {
           src="/AquaTrack/head.jpg"
           alt="AquaTrack image"
         />
-        <ul className={s.list}>
+        {/* <ul className={s.list}>
           <li></li>
-        </ul>
+        </ul> */}
         <div>
           <p className={s.parag}>
             Team project. The Aqua Track application is a hydration tracking

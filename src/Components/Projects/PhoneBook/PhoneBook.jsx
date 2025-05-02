@@ -37,15 +37,16 @@ export const PhoneBook = () => {
     >
       <h3 className={s.title}>PhoneBook</h3>
       <div className={s.container}>
-        <ul className={s.list}>
-          <li>
-            <img
-              className={s.project_img}
-              src="/PhoneBook/mainForms.jpg"
-              alt="PhoneBook image"
-            />
-          </li>
-        </ul>
+        <img
+          className={s.project_img}
+          loading="lazy"
+          width="550"
+          src="/PhoneBook/mainForms.jpg"
+          alt="PhoneBook image"
+        />
+        {/* <ul className={s.list}>
+          <li></li>
+        </ul> */}
 
         <div>
           <p className={s.parag}>

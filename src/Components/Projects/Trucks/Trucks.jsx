@@ -37,15 +37,16 @@ export const Trucks = () => {
     <div className={(s.block_project, s.trucks)}>
       <h3 className={s.title}>Trucks Campers</h3>
       <div className={s.container}>
-        <ul className={s.list}>
-          <li>
-            <img
-              className={s.project_img}
-              src="/Trucks/head.jpg"
-              alt="Trucks Campers image"
-            />
-          </li>
-        </ul>
+        <img
+          className={s.project_img}
+          loading="lazy"
+          width="550"
+          src="/Trucks/head.jpg"
+          alt="Trucks Campers image"
+        />
+        {/* <ul className={s.list}>
+          <li></li>
+        </ul> */}
 
         <div>
           <p className={s.parag}>

@@ -34,15 +34,16 @@ export const SparkArt = () => {
     <div className={(s.block_project, s.sparkart)}>
       <h3 className={s.title}>SparkArt</h3>
       <div className={s.container}>
-        <ul className={s.list}>
-          <li>
-            <img
-              className={s.project_img}
-              src="/SparkArt/main.jpg"
-              alt="SparkArt image"
-            />
-          </li>
-        </ul>
+        <img
+          className={s.project_img}
+          loading="lazy"
+          width="550"
+          src="/SparkArt/main.jpg"
+          alt="SparkArt image"
+        />
+        {/* <ul className={s.list}>
+          <li></li>
+        </ul> */}
 
         <div>
           <p className={s.parag}>
