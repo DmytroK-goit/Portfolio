@@ -41,7 +41,7 @@ export const PhoneBook = () => {
           <li>
             <img
               className={s.project_img}
-              src="/public/PhoneBook/mainForms.jpg"
+              src="/PhoneBook/mainForms.jpg"
               alt="PhoneBook image"
             />
           </li>
