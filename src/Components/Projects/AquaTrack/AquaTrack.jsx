@@ -36,16 +36,15 @@ export const AquaTrack = () => {
     <div className={`${s.block_project} ${s.aquaTrack}`}>
       <h3 className={s.title}>AquaTrack</h3>
       <div className={s.container}>
+        <img
+          className={s.project_img}
+          loading="lazy"
+          width="550"
+          src="/AquaTrack/head.jpg"
+          alt="AquaTrack image"
+        />
         <ul className={s.list}>
-          <li>
-            <img
-              className={s.project_img}
-              loading="lazy"
-              width="550"
-              src="/AquaTrack/head.jpg"
-              alt="AquaTrack image"
-            />
-          </li>
+          <li></li>
         </ul>
         <div>
           <p className={s.parag}>
