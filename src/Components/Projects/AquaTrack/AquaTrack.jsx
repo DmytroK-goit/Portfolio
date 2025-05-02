@@ -40,7 +40,7 @@ export const AquaTrack = () => {
           className={s.project_img}
           loading="lazy"
           width="550"
-          src="/AquaTrack/head.jpg"
+          src="/AquaTrack/head.webp"
           alt="AquaTrack image"
         />
         {/* <ul className={s.list}>

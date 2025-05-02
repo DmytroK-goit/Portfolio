@@ -40,7 +40,7 @@ export const Finance = () => {
           className={s.project_img}
           loading="lazy"
           width="550"
-          src="/finance/finace_app.jpg"
+          src="/finance/finace_app.webp"
           alt="Finance image"
         />
         {/* <ul className={s.list}>

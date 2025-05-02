@@ -208,12 +208,15 @@
   width: 280px;
   transition: transform 0.3s ease;
   &:hover {
-    transform: scale(1.11);
+    transform: scale(1.12);
   }
 
   @include media(desktop) {
     width: 550px;
     max-height: 380px;
+    &:hover {
+      transform: scale(1.11);
+    }
   }
 }
 .modalOverlay {
