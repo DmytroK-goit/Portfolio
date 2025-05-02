@@ -1,19 +1,16 @@
 import s from "../IndividualStyles.module.scss";
-// import head from "../../../images/finance/head page.jpg";
 import head from "../../../images/finance/finace_app.jpg";
-import mainPage from "../../../images/finance/head inform.jpg";
-import settings from "../../../images/finance/head inform2.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+
 export const Finance = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
   const handleOpenModal = (imgSrc) => {
     setSelectedImg(imgSrc);
   };
-
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
@@ -40,15 +37,11 @@ export const Finance = () => {
       <h3 className={s.title}>Finance App</h3>
       <div className={s.container}>
         <ul className={s.list}>
-          {[head].map((imgSrc, index) => (
-            <li key={index}>
-              <img
-                className={s.project_img}
-                src={imgSrc}
-                alt={`Finance image ${index + 1}`}
-              />
-            </li>
-          ))}
+          <img
+            className={s.project_img}
+            src="/public/finance/finace_app.jpg"
+            alt="Finance image"
+          />
         </ul>
 
         <div>
