@@ -36,9 +36,9 @@ export const AboutMe = () => {
           </p>
           <p>
             On the backend, I work with Node.js, Express, and MongoDB, and I’m
-            familiar with RESTful APIs, authentication (JWT), and cloud services
-            like AWS. I also use tools such as Webpack, Git, and Postman for
-            efficient development and debugging.
+            familiar with RESTful APIs, authentication (JWT). I also use tools
+            such as Webpack, Git, and Postman for efficient development and
+            debugging.
           </p>
           <p>
             I frequently take on the team lead role in projects — coordinating

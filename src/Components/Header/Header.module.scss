@@ -6,8 +6,12 @@
   left: 50%;
   transform: translateX(-50%);
   height: 70px;
-  background-color: rgba(27, 27, 27, 0.9);
-  border-radius: 12px;
+  // background-color: rgba(27, 27, 27, 0.9);
+  // border-radius: 12px;
+  background-image: url(../../images/bg_footer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
   margin: 0 auto;
   padding: 8px 16px;
   display: flex;
@@ -19,9 +23,8 @@
 
   @include media(desktop) {
     padding: 16px 32px;
-
     height: 70px;
-    border-radius: 0 0 8px 8px;
+    // border-radius: 0 0 8px 8px;
   }
 }
 

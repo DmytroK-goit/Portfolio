@@ -3,6 +3,7 @@ import { SiGmail } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 import { Logo } from "../Logo/Logo";
 export const Footer = () => {
   return (
@@ -49,6 +50,16 @@ export const Footer = () => {
                 className="text-blue-400 hover:underline"
               >
                 <FaGithub />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/dmytro-kovbasiuk-b473002b9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                <FaLinkedin />
               </a>
             </li>
           </ul>
