@@ -17,84 +17,183 @@
     gap: 16px;
   }
 }
-.aquaTrack {
+// .aquaTrack {
+//   background-image: url(../../images/AquaTrack/water.png);
+//   background-size: 100%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-position: right 0px bottom 0px;
+//   @include media(desktop) {
+//     background-size: 50%;
+//     background-position: right 0px bottom -125px;
+//   }
+// }
+
+// .finance {
+//   background-image: url(../../images/finance/finance.png);
+//   background-size: 80%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-position: right 40px bottom 48px;
+//   @include media(desktop) {
+//     background-size: 30%;
+//     background-position: right 50px bottom 10px;
+//   }
+// }
+// .phoneBook {
+//   background-image: url(../../images/PhoneBook/phoneBook.png);
+//   background-size: 85%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-position: right 30px bottom 80px;
+//   @include media(desktop) {
+//     background-size: 30%;
+//     background-position: right 40px bottom 8px;
+//   }
+// }
+// .movies {
+//   background-image: url(../../images/movies/movie.png);
+//   background-size: 80%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-position: right 50px bottom 80px;
+//   @include media(desktop) {
+//     background-size: 25%;
+//     background-position: right 169px bottom -35px;
+//   }
+// }
+// .portfolio {
+//   background-image: url(../../images/portfolio/portf.png);
+//   background-size: 80%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-position: right 0px bottom 80px;
+//   @include media(desktop) {
+//     background-size: 25%;
+//     background-position: right 90px bottom 45px;
+//   }
+// }
+// .sparkart {
+//   background-image: url(../../images/SparkArt/sparkArt.png);
+//   background-size: 80%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-position: right 0px bottom 40px;
+//   @include media(desktop) {
+//     background-size: 30%;
+//     background-position: right 90px bottom -35px;
+//   }
+// }
+// .trucks {
+//   background-image: url(../../images/Trucks/campers2.png);
+//   background-size: 90%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-position: right 0px bottom 70px;
+//   @include media(desktop) {
+//     background-size: 35%;
+//     background-position: right 90px bottom 70px;
+//   }
+// }
+.aquaTrack,
+.finance,
+.phoneBook,
+.movies,
+.portfolio,
+.sparkart,
+.trucks {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.6;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.aquaTrack::before {
   background-image: url(../../images/AquaTrack/water.png);
   background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-position: right 0px bottom 0px;
+
   @include media(desktop) {
     background-size: 50%;
     background-position: right 0px bottom -125px;
   }
 }
 
-.finance {
+.finance::before {
   background-image: url(../../images/finance/finance.png);
   background-size: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-position: right 40px bottom 48px;
+
   @include media(desktop) {
     background-size: 30%;
     background-position: right 50px bottom 10px;
   }
 }
-.phoneBook {
+
+.phoneBook::before {
   background-image: url(../../images/PhoneBook/phoneBook.png);
   background-size: 85%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-position: right 30px bottom 80px;
+
   @include media(desktop) {
     background-size: 30%;
     background-position: right 40px bottom 8px;
   }
 }
-.movies {
+
+.movies::before {
   background-image: url(../../images/movies/movie.png);
   background-size: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-position: right 50px bottom 80px;
+
   @include media(desktop) {
     background-size: 25%;
     background-position: right 169px bottom -35px;
   }
 }
-.portfolio {
+
+.portfolio::before {
   background-image: url(../../images/portfolio/portf.png);
   background-size: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-position: right 0px bottom 80px;
+
   @include media(desktop) {
     background-size: 25%;
     background-position: right 90px bottom 45px;
   }
 }
-.sparkart {
+
+.sparkart::before {
   background-image: url(../../images/SparkArt/sparkArt.png);
   background-size: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-position: right 0px bottom 40px;
+
   @include media(desktop) {
     background-size: 30%;
     background-position: right 90px bottom -35px;
   }
 }
-.trucks {
+
+.trucks::before {
   background-image: url(../../images/Trucks/campers2.png);
   background-size: 90%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-position: right 0px bottom 70px;
+
   @include media(desktop) {
     background-size: 35%;
     background-position: right 90px bottom 70px;
   }
 }
+
 .title {
   margin: 0;
   text-align: center;
