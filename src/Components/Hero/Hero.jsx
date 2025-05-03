@@ -1,5 +1,7 @@
 import s from "./Hero.module.scss";
 import avatar from "../../images/avatar.jpg";
+import avatar2 from "../../images/foto.webp";
+
 import phone from "../../images/svg/contacts/phone_icon.svg";
 import telegram from "../../images/svg/contacts/telegram-1.svg";
 import linkedin from "../../images/svg/contacts/linkedin-icon.svg";
@@ -30,7 +32,7 @@ export const Hero = () => {
         <div className={s.container_avatar}>
           <img
             className={s.avatar}
-            src={avatar}
+            src={avatar2}
             alt="Dmytro Kovbasiuk Avatar"
           />
         </div>
