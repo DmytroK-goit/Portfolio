@@ -36,7 +36,7 @@ export const Portfolio = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          loading="lazy"
+          // loading="lazy"
           width="550"
           src="/portfolio/head_info.jpg"
           alt="Portfolio image"

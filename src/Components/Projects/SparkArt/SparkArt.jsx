@@ -36,7 +36,7 @@ export const SparkArt = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          loading="lazy"
+          // loading="lazy"
           width="550"
           src="/SparkArt/main.jpg"
           alt="SparkArt image"

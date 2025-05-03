@@ -38,7 +38,7 @@ export const Finance = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          loading="lazy"
+          // loading="lazy"
           width="550"
           src="/finance/finace_app.webp"
           alt="Finance image"

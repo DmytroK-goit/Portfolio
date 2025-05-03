@@ -37,7 +37,7 @@ export const Movies = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          loading="lazy"
+          // loading="lazy"
           width="550"
           src="/movies/head.jpg"
           alt="Movies image"
