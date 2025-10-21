@@ -5,9 +5,10 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { Logo } from "../Logo/Logo";
+import { motion } from "framer-motion";
 export const Footer = () => {
   return (
-    <footer className={s.footer}>
+    <motion.footer layout className={s.footer}>
       <div className={s.footer_cont}>
         <Logo />
         <p>© 2025</p>
@@ -65,6 +66,6 @@ export const Footer = () => {
           </ul>
         </address>
       </div>
-    </footer>
+    </motion.footer>
   );
 };

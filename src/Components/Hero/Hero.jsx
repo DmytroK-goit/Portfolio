@@ -12,7 +12,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export const Hero = () => {
   return (
-    <div id="home" className={s.container}>
+    <motion.div layout id="home" className={s.container}>
       <div className={s.main_inf}>
         <div className={s.cont_info}>
           <h1 className={s.title}>
@@ -106,6 +106,6 @@ export const Hero = () => {
           </motion.div>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };

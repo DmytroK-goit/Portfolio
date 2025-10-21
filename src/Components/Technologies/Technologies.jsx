@@ -11,10 +11,11 @@ import Tailwind from "../../images/svg/tailwind-css-1.svg";
 import Figma from "../../images/svg/figma-icon.svg";
 import Postman from "../../images/svg/postman.svg";
 import Mongo from "../../images/svg/mongodb-icon-1.svg";
+import { motion } from "framer-motion";
 
 export const Technologies = () => {
   return (
-    <div id="tech" className={s.container}>
+    <motion.div layout id="tech" className={s.container}>
       <h2 className={s.title}>My Tech Skills</h2>
       <ul className={s.list}>
         <li className={s.item}>
@@ -66,6 +67,6 @@ export const Technologies = () => {
           <p>Postman</p>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };

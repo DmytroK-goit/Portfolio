@@ -29,7 +29,7 @@ export const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div id="projects" className={s.container}>
+    <motion.div layout id="projects" className={s.container}>
       <h2 className={s.title}>Projects</h2>
       <Swiper
         effect={"cube"}
@@ -62,6 +62,6 @@ export const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 };

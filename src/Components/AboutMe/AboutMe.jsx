@@ -5,12 +5,13 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
-import firstPageEdu from "../../images/Certf/certf_page-1.jpg";
-import secondPageEdu from "../../images/Certf/certf_page-2.jpg";
+import firstPageEdu from "../../images/Certf/certf_page-1.webp";
+import secondPageEdu from "../../images/Certf/certf_page-2.webp";
 import thirdPageEdu from "../../images/Certf/certf_page-3.jpg";
-import forthPageEdu from "../../images/Certf/certf_page-4.jpg";
+import forthPageEdu from "../../images/Certf/certf_page-4.webp";
 import { useEffect, useRef } from "react";
 import ShinyText from "../ShinyText/ShinyText";
+import { motion } from "framer-motion";
 
 export const AboutMe = () => {
   const swiperRef = useRef(null);
@@ -21,7 +22,7 @@ export const AboutMe = () => {
     }
   }, []);
   return (
-    <div id="about" className={s.container}>
+    <motion.div layout id="about" className={s.container}>
       <div className={s.abut_block}>
         <ShinyText>
           <h2 className={s.title}>About Me</h2>
@@ -81,6 +82,6 @@ export const AboutMe = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   );
 };

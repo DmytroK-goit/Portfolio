@@ -2,6 +2,7 @@ import { useState } from "react";
 import s from "./Header.module.scss";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Logo } from "../Logo/Logo";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export const Header = () => {
   };
 
   return (
-    <header className={s.header}>
+    <motion.header layout className={s.header}>
       <Logo />
       <button className={s.menuButton} onClick={toggleMenu}>
         <FiMenu size={24} />
@@ -50,6 +51,6 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };

@@ -12,7 +12,7 @@ const fadeInVariant = {
 
 export const Main = () => {
   return (
-    <div className={s.container}>
+    <motion.div layout className={s.container}>
       <Suspense fallback={<div className={s.loader}>Loading...</div>}>
         <motion.div
           initial="hidden"
@@ -49,6 +49,6 @@ export const Main = () => {
           <Projects />
         </motion.div>
       </Suspense>
-    </div>
+    </motion.div>
   );
 };
