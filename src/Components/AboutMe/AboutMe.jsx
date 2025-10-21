@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
 import firstPageEdu from "../../images/Certf/certf_page-1.webp";
 import secondPageEdu from "../../images/Certf/certf_page-2.webp";
-import thirdPageEdu from "../../images/Certf/certf_page-3.jpg";
+import thirdPageEdu from "../../images/Certf/certf_page-3.webp";
 import forthPageEdu from "../../images/Certf/certf_page-4.webp";
 import { useEffect, useRef } from "react";
 import ShinyText from "../ShinyText/ShinyText";
