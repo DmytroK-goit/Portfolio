@@ -1,13 +1,9 @@
 import s from "./Hero.module.scss";
-import avatar from "../../images/avatar.jpg";
 import avatar2 from "../../images/foto.webp";
-
-import phone from "../../images/svg/contacts/phone_icon.svg";
 import telegram from "../../images/svg/contacts/telegram-1.svg";
 import linkedin from "../../images/svg/contacts/linkedin-icon.svg";
 import gmail from "../../images/svg/contacts/gmail-icon-1.svg";
 import github from "../../images/svg/contacts/github-icon-2.svg";
-import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
 export const Hero = () => {
