@@ -96,6 +96,7 @@
 //   }
 // }
 .aquaTrack,
+.istore,
 .finance,
 .phoneBook,
 .movies,
@@ -130,6 +131,16 @@
 
 .finance::before {
   background-image: url(../../images/finance/finance.webp);
+  background-size: 80%;
+  background-position: right 40px bottom 48px;
+
+  @include media(desktop) {
+    background-size: 30%;
+    background-position: right 50px bottom 10px;
+  }
+}
+.istore::before {
+  background-image: url(../../images/Istore/istoreBG.webp);
   background-size: 80%;
   background-position: right 40px bottom 48px;
 

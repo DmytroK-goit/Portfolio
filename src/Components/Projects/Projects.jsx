@@ -14,9 +14,11 @@ import { Portfolio } from "./Portfolio/Portfolio";
 import { SparkArt } from "./SparkArt/SparkArt";
 import { Trucks } from "./Trucks/Trucks";
 import { PhoneBook } from "./PhoneBook/PhoneBook";
+import { Istore } from "./Istore/istore";
 
 const slides = [
   <AquaTrack />,
+  <Istore />,
   <Finance />,
   <PhoneBook />,
   <Movies />,

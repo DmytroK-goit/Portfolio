@@ -29,25 +29,24 @@ export const AboutMe = () => {
         </ShinyText>
         <div className={s.information}>
           <p>
-            Hi, I’m a Fullstack Developer with a strong passion for web
-            development. Enthusiastic, responsible, and proactive — I’m always
-            eager to learn and grow. I specialize in building responsive,
-            accessible, and user-friendly interfaces using HTML, CSS,
-            JavaScript, React, Redux, and TypeScript.
+            I’m a Fullstack Developer passionate about creating modern,
+            efficient, and user-friendly web applications. Responsible,
+            proactive, and always eager to learn — I continuously improve my
+            skills and explore new technologies.
           </p>
           <p>
-            On the backend, I work with Node.js, Express, and MongoDB, and I’m
-            familiar with RESTful APIs, authentication (JWT). I also use tools
-            such as Webpack, Git, and Postman for efficient development and
-            debugging.
+            I specialize in building responsive and accessible interfaces using
+            HTML, CSS, JavaScript, React, Redux, and TypeScript. On the backend,
+            I work with Node.js, Express, and MongoDB, and I’m experienced with
+            RESTful APIs and JWT authentication.
           </p>
           <p>
-            I frequently take on the team lead role in projects — coordinating
-            tasks, supporting teammates, and ensuring smooth collaboration.
+            As a team lead on several projects, I’ve coordinated development
+            processes, supported teammates, and ensured smooth collaboration.
           </p>
           <p>
-            Currently, I’m focused on sharpening my skills and gaining hands-on
-            experience through real-world projects.
+            Currently, I’m focused on enhancing my expertise and applying it
+            through real-world projects that make an impact.
           </p>
         </div>
       </div>
