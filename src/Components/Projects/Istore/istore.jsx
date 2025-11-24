@@ -1,5 +1,4 @@
 import s from "../IndividualStyles.module.scss";
-import head from "../../../images/finance/finace_app.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
@@ -8,17 +7,12 @@ import { motion } from "framer-motion";
 export const Istore = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
-  const handleOpenModal = (imgSrc) => {
-    setSelectedImg(imgSrc);
-  };
-  const handleCloseModal = () => {
-    setSelectedImg(null);
-  };
+  const handleOpenModal = (imgSrc) => setSelectedImg(imgSrc);
+  const handleCloseModal = () => setSelectedImg(null);
+
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
-        handleCloseModal();
-      }
+      if (e.key === "Escape") handleCloseModal();
     };
 
     if (selectedImg) {
@@ -45,20 +39,20 @@ export const Istore = () => {
 
         <div>
           <p className={s.parag}>
-            IStore is a full-stack e-commerce application designed for seamless
-            online shopping. It allows users to browse products, view detailed
-            item pages, add products to the cart, and complete purchases
-            securely. The platform features user authentication, role-based
-            access (admin, user, guest), and product management through a
-            connected backend. It also includes responsive design, real-time
-            updates, and dynamic filtering to ensure a smooth and intuitive user
-            experience across all devices. The project is built with Next.js,
-            Redux Toolkit, TypeScript, Node.js, and MongoDB, integrating both
-            front-end and back-end functionality for a complete shopping
-            experience.
+            IStore is a full-stack e-commerce application for seamless online
+            shopping. Users can browse products, view details, add items to the
+            cart, and complete purchases. It features authentication with
+            role-based access (admin, user, demo). The demo role allows
+            exploring the app safely without affecting real data. Demo access:{" "}
+            <br />
+            <strong>Email:</strong> demo.admin@gmail.com <br />
+            <strong>Password:</strong> 111111 <br />
+            Built with Next.js, Redux Toolkit, Node.js, and MongoDB, it provides
+            a responsive and smooth shopping experience.
           </p>
         </div>
       </div>
+
       <div className={s.cont_button}>
         <p>PRESS</p>
         <FaHandPointRight />
@@ -68,18 +62,13 @@ export const Istore = () => {
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
-          animate={{
-            scale: [1, 1.05, 0.95, 1.05, 1],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
+          animate={{ scale: [1, 1.05, 0.95, 1.05, 1] }}
+          transition={{ duration: 2, repeat: Infinity, repeatType: "loop" }}
         >
           IStore
         </motion.a>
       </div>
+
       {selectedImg && (
         <div className={s.modalOverlay} onClick={handleCloseModal}>
           <div
@@ -89,7 +78,7 @@ export const Istore = () => {
             <button className={s.modalCloseBtn} onClick={handleCloseModal}>
               <VscChromeClose />
             </button>
-            <img src={selectedImg} alt="Zoomed AquaTrack" />
+            <img src={selectedImg} alt="Zoomed Istore" />
           </div>
         </div>
       )}
