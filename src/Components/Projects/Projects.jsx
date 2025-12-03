@@ -17,9 +17,9 @@ import { PhoneBook } from "./PhoneBook/PhoneBook";
 import { Istore } from "./Istore/istore";
 
 const slides = [
-  <AquaTrack />,
   <Istore />,
   <Finance />,
+  <AquaTrack />,
   <PhoneBook />,
   <Movies />,
   <Portfolio />,

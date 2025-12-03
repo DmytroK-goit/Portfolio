@@ -11,6 +11,7 @@ import Tailwind from "../../images/svg/tailwind-css-1.svg";
 import Figma from "../../images/svg/figma-icon.svg";
 import Postman from "../../images/svg/postman.svg";
 import Mongo from "../../images/svg/mongodb-icon-1.svg";
+import next from "../../images/svg/nextjs.svg";
 import { motion } from "framer-motion";
 
 export const Technologies = () => {
@@ -37,6 +38,10 @@ export const Technologies = () => {
         <li className={s.item}>
           <img src={react} alt="React" />
           <p>React</p>
+        </li>
+        <li className={s.item}>
+          <img src={next} alt="Next" />
+          <p>Next.js</p>
         </li>
         <li className={s.item}>
           <img src={nodejs} alt="NodeJS" />
