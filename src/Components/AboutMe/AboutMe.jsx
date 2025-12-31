@@ -22,7 +22,15 @@ export const AboutMe = () => {
     }
   }, []);
   return (
-    <motion.div layout id="about" className={s.container}>
+    <motion.div
+      layout
+      id="about"
+      className={s.container}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
+    >
       <div className={s.abut_block}>
         <ShinyText>
           <h2 className={s.title}>About Me</h2>

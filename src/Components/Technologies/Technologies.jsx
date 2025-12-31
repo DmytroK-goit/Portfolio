@@ -18,7 +18,14 @@ export const Technologies = () => {
   return (
     <motion.div layout id="tech" className={s.container}>
       <h2 className={s.title}>My Tech Skills</h2>
-      <ul className={s.list}>
+      <motion.ul
+        className={s.list}
+        layout
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
+      >
         <li className={s.item}>
           <img src={html} alt="Html" />
           <p>HTML</p>
@@ -71,7 +78,7 @@ export const Technologies = () => {
           <img src={Postman} alt="Postman" />
           <p>Postman</p>
         </li>
-      </ul>
+      </motion.ul>
     </motion.div>
   );
 };

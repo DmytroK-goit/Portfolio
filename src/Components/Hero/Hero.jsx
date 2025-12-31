@@ -12,7 +12,14 @@ import { Typewriter } from "react-simple-typewriter";
 
 export const Hero = () => {
   return (
-    <motion.div layout id="home" className={s.container}>
+    <motion.div
+      layout
+      id="home"
+      className={s.container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+    >
       <div className={s.main_inf}>
         <div className={s.cont_info}>
           <h1 className={s.title}>
