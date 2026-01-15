@@ -1,0 +1,22 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About Me",
+  "nav.tech": "My Tech Skills",
+  "nav.projects": "Projects",
+  "about": {
+    "title": "About Me",
+    "p1": "I’m a Fullstack Developer passionate about creating modern, efficient, and user-friendly web applications. Responsible, proactive, and always eager to learn — I continuously improve my skills and explore new technologies.",
+    "p2": "I specialize in building responsive and accessible interfaces using HTML, CSS, JavaScript, React, Redux, and TypeScript. On the backend, I work with Node.js, Express, and MongoDB, and I’m experienced with RESTful APIs and JWT authentication.",
+    "p3": "As a team lead on several projects, I’ve coordinated development processes, supported teammates, and ensured smooth collaboration.",
+    "p4": "Currently, I’m focused on enhancing my expertise and applying it through real-world projects that make an impact."
+  },
+  "hero": {
+    "name": "Dmytro Kovbasiuk"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "tech": {
+    "title": "My Tech Skills"
+  }
+}

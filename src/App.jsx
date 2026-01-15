@@ -3,7 +3,7 @@ import "./scss/style.scss";
 import SharedLayout from "./Components/SharedLayout";
 import NotFound from "./Components/NotFound/NotFound";
 import { Main } from "./Components/Main/Main";
-
+import "./i18n";
 function App() {
   return (
     <Routes>

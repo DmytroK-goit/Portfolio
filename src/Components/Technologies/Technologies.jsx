@@ -13,11 +13,14 @@ import Postman from "../../images/svg/postman.svg";
 import Mongo from "../../images/svg/mongodb-icon-1.svg";
 import next from "../../images/svg/nextjs.svg";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Technologies = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.div layout id="tech" className={s.container}>
-      <h2 className={s.title}>My Tech Skills</h2>
+      <h2 className={s.title}>{t("tech.title")}</h2>
       <motion.ul
         className={s.list}
         layout

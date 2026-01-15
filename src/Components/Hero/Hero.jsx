@@ -9,8 +9,10 @@ import gmail from "../../images/svg/contacts/gmail-icon-1.svg";
 import github from "../../images/svg/contacts/github-icon-2.svg";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import { useTranslation } from "react-i18next";
 
 export const Hero = () => {
+  const { t } = useTranslation();
   return (
     <motion.div
       layout
@@ -24,7 +26,7 @@ export const Hero = () => {
         <div className={s.cont_info}>
           <h1 className={s.title}>
             <Typewriter
-              words={["Dmytro Kovbasiuk"]}
+              words={[t("hero.name")]}
               loop={false}
               cursor
               cursorStyle="|"

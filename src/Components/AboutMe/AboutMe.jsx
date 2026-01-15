@@ -12,9 +12,11 @@ import forthPageEdu from "../../images/Certf/certf_page-4.webp";
 import { useEffect, useRef } from "react";
 import ShinyText from "../ShinyText/ShinyText";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const AboutMe = () => {
   const swiperRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (swiperRef.current && swiperRef.current.swiper) {
@@ -33,34 +35,18 @@ export const AboutMe = () => {
     >
       <div className={s.abut_block}>
         <ShinyText>
-          <h2 className={s.title}>About Me</h2>
+          <h2 className={s.title}>{t("about.title")}</h2>
         </ShinyText>
         <div className={s.information}>
-          <p>
-            I’m a Fullstack Developer passionate about creating modern,
-            efficient, and user-friendly web applications. Responsible,
-            proactive, and always eager to learn — I continuously improve my
-            skills and explore new technologies.
-          </p>
-          <p>
-            I specialize in building responsive and accessible interfaces using
-            HTML, CSS, JavaScript, React, Redux, and TypeScript. On the backend,
-            I work with Node.js, Express, and MongoDB, and I’m experienced with
-            RESTful APIs and JWT authentication.
-          </p>
-          <p>
-            As a team lead on several projects, I’ve coordinated development
-            processes, supported teammates, and ensured smooth collaboration.
-          </p>
-          <p>
-            Currently, I’m focused on enhancing my expertise and applying it
-            through real-world projects that make an impact.
-          </p>
+          <p>{t("about.p1")}</p>
+          <p>{t("about.p2")}</p>
+          <p>{t("about.p3")}</p>
+          <p>{t("about.p4")}</p>
         </div>
       </div>
       <div>
         <ShinyText>
-          <h3 className={s.title}>My Education</h3>
+          <h3 className={s.title}>{t("education.title")}</h3>
         </ShinyText>
 
         <Swiper
