@@ -16,8 +16,6 @@ export const Header = () => {
     <motion.header layout className={s.header}>
       <Logo />
 
-      <LanguageSwitcher className="px-4" />
-
       <button className={s.menuButton} onClick={toggleMenu}>
         <FiMenu size={24} />
       </button>
@@ -55,6 +53,7 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
+      <LanguageSwitcher className="px-4" />
     </motion.header>
   );
 };

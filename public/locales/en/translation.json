@@ -18,5 +18,17 @@
   },
   "tech": {
     "title": "My Tech Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "btn": "PRESS",
+    "aqua": "Team project. The Aqua Track application is a hydration tracking tool designed to help users monitor and improve their daily water intake. As the Front-End Team Lead for the Aqua Track project, I led the development of the user interface using React, managed the application's state with Redux, and provided support to the development team. Server part is developed with Mongo DB.",
+    "finance": "Financial Analyst is a personal full-stack project designed for tracking and managing personal income and expenses. It provides features for analyzing finances on a monthly and yearly basis, adding transactions, and visualizing financial data with charts. The platform also includes user registration and authentication for secure access. The project is currently in active development.",
+    "istore": "IStore is a full-stack e-commerce application for seamless online shopping. Users can browse products, view details, add items to the cart, and complete purchases. It features authentication with role-based access (admin, user, demo). The demo role allows exploring the app safely without affecting real data.Email: demo.admin@gmail.com Password: 111111. Built with Next.js, Redux Toolkit, Node.js, and MongoDB, it provides a responsive and smooth shopping experience.",
+    "movie": "This project is a React-based application built with Vite, utilizing a public API. It demonstrates modern front-end development practices, including interactive UI components, state management, and data fetching from external sources. The focus is on creating a responsive, user-friendly interface that highlights React skills in real-world scenarios. This project is ideal for showcasing practical experience with APIs and dynamic content handling.",
+    "phonebook": "A full-stack application for managing personal contacts. Users can register, add, edit, delete, and view contacts with sorting and filtering options for easier navigation. The app also supports multilingual functionality for a better user experience. All data is securely stored in MongoDB. The frontend is built with React, and the backend uses Node.js and Express to handle RESTful API requests.",
+    "portfolio": "Team project. A website with a responsive layout. Role: Team Lead, developer. As a team lead on the project, I was responsible for setting up the GitHub repository for contributors, configuring base styles and fonts, reviewing and merging pull requests, and supporting team members throughout the development process. As a developer, I was responsible for implementing the \"work-together\" section.",
+    "sparkart": "The landing page for Spark Art showcases a creative and visually appealing design focused on presenting the brand's services and offerings. It emphasizes user-friendly navigation and an engaging layout, aimed at attracting potential customers or clients. The design is modern, with a clear focus on aesthetics and functionality.",
+    "truck": "The React-based application showcases an interface that allows users to search and filter results based on various criteria. It makes API requests to fetch data, providing dynamic content that updates according to user input. This project highlights the integration of external data sources and the practical use of React for building interactive, data-driven applications."
   }
 }

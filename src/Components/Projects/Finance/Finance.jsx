@@ -4,13 +4,12 @@ import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Finance = () => {
+  const { t } = useTranslation();
   const [selectedImg, setSelectedImg] = useState(null);
 
-  const handleOpenModal = (imgSrc) => {
-    setSelectedImg(imgSrc);
-  };
   const handleCloseModal = () => {
     setSelectedImg(null);
   };
@@ -38,28 +37,17 @@ export const Finance = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          // loading="lazy"
           width="550"
           src="/finance/finace_app.webp"
           alt="Finance image"
         />
-        {/* <ul className={s.list}>
-          <li></li>
-        </ul> */}
 
         <div>
-          <p className={s.parag}>
-            Financial Analyst is a personal full-stack project designed for
-            tracking and managing personal income and expenses. It provides
-            features for analyzing finances on a monthly and yearly basis,
-            adding transactions, and visualizing financial data with charts. The
-            platform also includes user registration and authentication for
-            secure access. The project is currently in active development.
-          </p>
+          <p className={s.parag}>{t("projects.finance")}</p>
         </div>
       </div>
       <div className={s.cont_button}>
-        <p>PRESS</p>
+        <p>{t("projects.btn")}</p>
         <FaHandPointRight />
         <motion.a
           className={s.but}

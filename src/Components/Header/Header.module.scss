@@ -3,11 +3,10 @@
 .header {
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 0;
+  width: 100%;
   transform: translateX(-50%);
   height: 70px;
-  // background-color: rgba(27, 27, 27, 0.9);
-  // border-radius: 12px;
   background-image: url(../../images/bg_footer.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -18,13 +17,12 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 
   @include media(desktop) {
     padding: 16px 32px;
     height: 70px;
-    // border-radius: 0 0 8px 8px;
   }
 }
 
@@ -47,7 +45,6 @@
   right: -1000%;
   width: 90%;
   height: 100vh;
-  // background-color: #272727;
   background-image: url(../../images/bgModile.webp);
   background-repeat: no-repeat;
   background-size: cover;

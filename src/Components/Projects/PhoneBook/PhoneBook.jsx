@@ -3,12 +3,10 @@ import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 export const PhoneBook = () => {
+  const { t } = useTranslation();
   const [selectedImg, setSelectedImg] = useState(null);
-
-  const handleOpenModal = (imgSrc) => {
-    setSelectedImg(imgSrc);
-  };
 
   const handleCloseModal = () => {
     setSelectedImg(null);
@@ -36,28 +34,17 @@ export const PhoneBook = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          // loading="lazy"
           width="550"
           src="/PhoneBook/mainForms.jpg"
           alt="PhoneBook image"
         />
-        {/* <ul className={s.list}>
-          <li></li>
-        </ul> */}
 
         <div>
-          <p className={s.parag}>
-            A full stack application for managing personal contacts. Users can
-            register, add, edit, delete, and view contacts with sorting and
-            filtering options for easier navigation. The app also supports
-            multilingual functionality for a better user experience. All data is
-            securely stored in MongoDB. The frontend is built with React, and
-            the backend uses Node.js and Express to handle RESTful API requests.
-          </p>
+          <p className={s.parag}>{t("projects.phonebook")}</p>
         </div>
       </div>
       <div className={s.cont_button}>
-        <p>PRESS</p>
+        <p>{t("projects.btn")}</p>
         <FaHandPointRight />
         <motion.a
           className={s.but}

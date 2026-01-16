@@ -3,12 +3,10 @@ import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 export const Portfolio = () => {
+  const { t } = useTranslation();
   const [selectedImg, setSelectedImg] = useState(null);
-
-  const handleOpenModal = (imgSrc) => {
-    setSelectedImg(imgSrc);
-  };
 
   const handleCloseModal = () => {
     setSelectedImg(null);
@@ -36,28 +34,17 @@ export const Portfolio = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          // loading="lazy"
           width="550"
           src="/portfolio/head_info.jpg"
           alt="Portfolio image"
         />
-        {/* <ul className={s.list}>
-          <li></li>
-        </ul> */}
 
         <div>
-          <p className={s.parag}>
-            Team project. A website with a responsive layout. Role: Team Lead,
-            developer. As a team lead on the project, I needed to set up a
-            GitHub repository for project contributors, as well as hook up
-            styles with basic settings and fonts. As a team leader, I checked,
-            accepted pull requests, and helped project participants. As a
-            developer I was responsible for the "work-together" section.
-          </p>
+          <p className={s.parag}>{t("projects.portfolio")}</p>
         </div>
       </div>
       <div className={s.cont_button}>
-        <p>PRESS</p>
+        <p>{t("projects.btn")}</p>
         <FaHandPointRight />
         <motion.a
           className={s.but}

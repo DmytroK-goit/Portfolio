@@ -3,11 +3,10 @@ import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 export const SparkArt = () => {
+  const { t } = useTranslation();
   const [selectedImg, setSelectedImg] = useState(null);
-  const handleOpenModal = (imgSrc) => {
-    setSelectedImg(imgSrc);
-  };
 
   const handleCloseModal = () => {
     setSelectedImg(null);
@@ -36,28 +35,17 @@ export const SparkArt = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          // loading="lazy"
           width="550"
           src="/SparkArt/main.jpg"
           alt="SparkArt image"
         />
-        {/* <ul className={s.list}>
-          <li></li>
-        </ul> */}
 
         <div>
-          <p className={s.parag}>
-            The landing page for Spark Art showcases a creative and visually
-            appealing design focused on presenting the brand's services and
-            offerings. It emphasizes user-friendly navigation and an engaging
-            layout, likely aimed at attracting potential customers or clients.
-            The design is modern, with a clear focus on aesthetics and
-            functionality.
-          </p>
+          <p className={s.parag}>{t("projects.sparkart")}</p>
         </div>
       </div>{" "}
       <div className={s.cont_button}>
-        <p>PRESS</p>
+        <p>{t("projects.btn")}</p>
         <FaHandPointRight />
         <motion.a
           className={s.but}

@@ -3,11 +3,12 @@ import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Istore = () => {
+  const { t } = useTranslation();
   const [selectedImg, setSelectedImg] = useState(null);
 
-  const handleOpenModal = (imgSrc) => setSelectedImg(imgSrc);
   const handleCloseModal = () => setSelectedImg(null);
 
   useEffect(() => {
@@ -38,23 +39,12 @@ export const Istore = () => {
         />
 
         <div>
-          <p className={s.parag}>
-            IStore is a full-stack e-commerce application for seamless online
-            shopping. Users can browse products, view details, add items to the
-            cart, and complete purchases. It features authentication with
-            role-based access (admin, user, demo). The demo role allows
-            exploring the app safely without affecting real data. Demo access:{" "}
-            <br />
-            <strong>Email:</strong> demo.admin@gmail.com <br />
-            <strong>Password:</strong> 111111 <br />
-            Built with Next.js, Redux Toolkit, Node.js, and MongoDB, it provides
-            a responsive and smooth shopping experience.
-          </p>
+          <p className={s.parag}>{t("projects.istore")}</p>
         </div>
       </div>
 
       <div className={s.cont_button}>
-        <p>PRESS</p>
+        <p>{t("projects.btn")}</p>
         <FaHandPointRight />
         <motion.a
           className={s.but}

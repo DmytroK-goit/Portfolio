@@ -6,12 +6,10 @@ import settings from "../../../images/Trucks/TrackInfo.png";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 export const Trucks = () => {
+  const { t } = useTranslation();
   const [selectedImg, setSelectedImg] = useState(null);
-
-  const handleOpenModal = (imgSrc) => {
-    setSelectedImg(imgSrc);
-  };
 
   const handleCloseModal = () => {
     setSelectedImg(null);
@@ -39,28 +37,17 @@ export const Trucks = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          // loading="lazy"
           width="550"
           src="/Trucks/head.jpg"
           alt="Trucks Campers image"
         />
-        {/* <ul className={s.list}>
-          <li></li>
-        </ul> */}
 
         <div>
-          <p className={s.parag}>
-            The React-based application showcases an interface that allows users
-            to search and filter results based on various criteria. It makes API
-            requests to fetch data, providing dynamic content that updates
-            according to user input. This project highlights the integration of
-            external data sources and the practical use of React for building
-            interactive, data-driven applications.
-          </p>
+          <p className={s.parag}>{t("projects.truck")}</p>
         </div>
       </div>
       <div className={s.cont_button}>
-        <p>PRESS</p>
+        <p>{t("projects.btn")}</p>
         <FaHandPointRight />
         <motion.a
           className={s.but}

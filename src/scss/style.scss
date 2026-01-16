@@ -2,7 +2,6 @@
 @use "./vars" as *;
 @use "./mixins" as *;
 :root {
-  // font-family: "Raleway", sans-serif;
   font-family: "IBM Plex Mono", sans-serif;
   --second-family: "IBM Plex Mono", sans-serif;
   font-size: 16px;
@@ -23,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+
   width: 100%;
   height: 100vh;
   background-image: url("../images/bg.webp");

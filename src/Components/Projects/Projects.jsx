@@ -15,6 +15,7 @@ import { SparkArt } from "./SparkArt/SparkArt";
 import { Trucks } from "./Trucks/Trucks";
 import { PhoneBook } from "./PhoneBook/PhoneBook";
 import { Istore } from "./Istore/istore";
+import { useTranslation } from "react-i18next";
 
 const slides = [
   <Istore />,
@@ -29,10 +30,10 @@ const slides = [
 
 export const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  const { t } = useTranslation();
   return (
     <motion.div layout id="projects" className={s.container}>
-      <h2 className={s.title}>Projects</h2>
+      <h2 className={s.title}>{t("projects.title")}</h2>
       <Swiper
         effect={"cube"}
         grabCursor={true}

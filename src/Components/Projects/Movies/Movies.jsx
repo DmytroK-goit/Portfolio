@@ -3,13 +3,11 @@ import { FaHandPointRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Movies = () => {
+  const { t } = useTranslation();
   const [selectedImg, setSelectedImg] = useState(null);
-
-  const handleOpenModal = (imgSrc) => {
-    setSelectedImg(imgSrc);
-  };
 
   const handleCloseModal = () => {
     setSelectedImg(null);
@@ -37,29 +35,17 @@ export const Movies = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          // loading="lazy"
           width="550"
           src="/movies/head.jpg"
           alt="Movies image"
         />
-        {/* <ul className={s.list}>
-          <li></li>
-        </ul> */}
 
         <div>
-          <p className={s.parag}>
-            This project is a React-based application built with Vite, utilizing
-            a public API. It demonstrates modern front-end development
-            practices, including interactive UI components, state management,
-            and data fetching from external sources. The focus is on creating a
-            responsive, user-friendly interface that highlights React skills in
-            real-world scenarios. This project is ideal for showcasing practical
-            experience with APIs and dynamic content handling.
-          </p>
+          <p className={s.parag}>{t("projects.movie")}</p>
         </div>
       </div>
       <div className={s.cont_button}>
-        <p>PRESS</p>
+        <p>{t("projects.btn")}</p>
         <FaHandPointRight />
         <motion.a
           className={s.but}

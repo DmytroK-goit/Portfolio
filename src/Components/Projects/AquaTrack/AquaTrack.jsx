@@ -1,15 +1,12 @@
 import s from "../IndividualStyles.module.scss";
 import { FaHandPointRight } from "react-icons/fa";
-
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 export const AquaTrack = () => {
   const [selectedImg, setSelectedImg] = useState(null);
-
-  const handleOpenModal = (imgSrc) => {
-    setSelectedImg(imgSrc);
-  };
+  const { t } = useTranslation();
 
   const handleCloseModal = () => {
     setSelectedImg(null);
@@ -38,27 +35,17 @@ export const AquaTrack = () => {
       <div className={s.container}>
         <img
           className={s.project_img}
-          // loading="lazy"
           width="550"
           src="/AquaTrack/head.webp"
           alt="AquaTrack image"
         />
-        {/* <ul className={s.list}>
-          <li></li>
-        </ul> */}
+
         <div>
-          <p className={s.parag}>
-            Team project. The Aqua Track application is a hydration tracking
-            tool designed to help users monitor and improve their daily water
-            intake. As the Front-End Team Lead for the Aqua Track project, I led
-            the development of the user interface using React, managed the
-            application's state with Redux, and provided support to the
-            development team. Server part is developed with Mongo DB.
-          </p>
+          <p className={s.parag}>{t("projects.aqua")}</p>
         </div>
       </div>
       <div className={s.cont_button}>
-        <p>PRESS</p>
+        <p>{t("projects.btn")}</p>
         <FaHandPointRight />
         <motion.a
           className={s.but}
