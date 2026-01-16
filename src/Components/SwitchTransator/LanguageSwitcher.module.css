@@ -24,3 +24,8 @@ option {
   background-color: black;
   color: white;
 }
+/* .opt {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+} */
