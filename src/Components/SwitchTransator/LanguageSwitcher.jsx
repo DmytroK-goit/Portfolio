@@ -1,21 +1,28 @@
 import { useTranslation } from "react-i18next";
 import s from "./LanguageSwitcher.module.css";
+import ukFlag from "../../images/unitedkingdom.gif";
+import ukraineFlag from "../../images/ukraine.gif";
+
 export const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
-
   return (
-    <div className={s.cont}>
-      <select
-        onChange={(e) => changeLanguage(e.target.value)}
-        value={i18n.language}
+    <div className={s.switcher}>
+      <button
+        className={`${s.button} ${i18n.language === "en" ? s.active : ""}`}
+        onClick={() => i18n.changeLanguage("en")}
       >
-        <option value="en">Eng</option>
-        <option value="uk">Укр</option>
-      </select>
+        <img className={s.imgflag} src={ukFlag} width="20" alt="EN" />
+        <span>EN</span>
+      </button>
+
+      <button
+        className={`${s.button} ${i18n.language === "uk" ? s.active : ""}`}
+        onClick={() => i18n.changeLanguage("uk")}
+      >
+        <img className={s.imgflag} src={ukraineFlag} width="20" alt="EN" />
+        <span>UA</span>
+      </button>
     </div>
   );
 };

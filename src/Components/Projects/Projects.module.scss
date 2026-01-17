@@ -3,11 +3,11 @@
 .container {
   scroll-margin-top: 80px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -83,7 +83,7 @@
 
 .title {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   color: var(--second-color);
   font-size: 28px;
   text-align: center;

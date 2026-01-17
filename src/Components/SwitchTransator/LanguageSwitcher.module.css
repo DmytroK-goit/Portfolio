@@ -29,3 +29,25 @@ option {
   gap: 2px;
   justify-content: center;
 } */
+.switcher {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #9c9c9c;
+  cursor: pointer;
+  display: flex;
+  gap: 2px;
+}
+
+.active {
+  color: #fff;
+  text-decoration: underline;
+}
+.imgflag {
+  width: 24px;
+}
