@@ -30,5 +30,8 @@
     "portfolio": "Team project. A website with a responsive layout. Role: Team Lead, developer. As a team lead on the project, I was responsible for setting up the GitHub repository for contributors, configuring base styles and fonts, reviewing and merging pull requests, and supporting team members throughout the development process. As a developer, I was responsible for implementing the \"work-together\" section.",
     "sparkart": "The landing page for Spark Art showcases a creative and visually appealing design focused on presenting the brand's services and offerings. It emphasizes user-friendly navigation and an engaging layout, aimed at attracting potential customers or clients. The design is modern, with a clear focus on aesthetics and functionality.",
     "truck": "The React-based application showcases an interface that allows users to search and filter results based on various criteria. It makes API requests to fetch data, providing dynamic content that updates according to user input. This project highlights the integration of external data sources and the practical use of React for building interactive, data-driven applications."
+  },
+  "notFound": {
+    "home": "Home"
   }
 }
