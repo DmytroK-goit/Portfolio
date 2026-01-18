@@ -41,7 +41,9 @@ button {
   color: #9c9c9c;
   cursor: pointer;
   display: flex;
-  gap: 2px;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .active {
@@ -49,5 +51,5 @@ button {
   text-decoration: underline;
 }
 .imgflag {
-  width: 24px;
+  width: 34px;
 }

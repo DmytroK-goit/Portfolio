@@ -47,13 +47,6 @@ export const Hero = () => {
         </div>
       </div>
       <ul className={s.contacts_list}>
-        {/* <li className={s.contact_item}>
-          <a href="tel:+380979638775">
-            <img className={s.icon} src={phone} alt="Phone" />
-            <p className={s.contact_text}>+38(097)963-87-75</p>
-          </a>
-        </li> */}
-
         <li className={s.contact_item}>
           <motion.div
             whileHover={{ scale: 1.25 }}
@@ -66,7 +59,6 @@ export const Hero = () => {
               rel="noopener noreferrer"
             >
               <img className={s.icon} src={telegram} alt="Telegram" />
-              {/* <p className={s.contact_text}>Telegram</p> */}
             </a>
           </motion.div>
         </li>
@@ -82,7 +74,6 @@ export const Hero = () => {
               rel="noopener noreferrer"
             >
               <img className={s.icon} src={github} alt="GitHub" />
-              {/* <p className={s.contact_text}>GitHub</p> */}
             </a>
           </motion.div>
         </li>
@@ -94,7 +85,6 @@ export const Hero = () => {
           >
             <a href="mailto:k0vbasyuk.dim0n@gmail.com">
               <img className={s.icon} src={gmail} alt="Gmail" />
-              {/* <p className={s.contact_text}>Gmail</p> */}
             </a>
           </motion.div>
         </li>
@@ -110,7 +100,6 @@ export const Hero = () => {
               rel="noopener noreferrer"
             >
               <img className={s.icon} src={linkedin} alt="LinkedIn" />
-              {/* <p className={s.contact_text}>LinkedIn</p> */}
             </a>
           </motion.div>
         </li>

@@ -11,12 +11,9 @@ export const Footer = () => {
     <motion.footer layout className={s.footer}>
       <div className={s.footer_cont}>
         <Logo />
-        <p>© 2025</p>
+        <p>© 2026</p>
         <address className={s.address}>
           <ul className={s.address_list}>
-            {/* <li>
-              <h3>Contact Owner</h3>
-            </li> */}
             <li>
               <a
                 href="mailto:k0vbasyuk.dim0n@gmail.com"
