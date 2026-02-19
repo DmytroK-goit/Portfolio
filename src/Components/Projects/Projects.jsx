@@ -16,6 +16,7 @@ import { Trucks } from "./Trucks/Trucks";
 import { PhoneBook } from "./PhoneBook/PhoneBook";
 import { Istore } from "./Istore/istore";
 import { useTranslation } from "react-i18next";
+import { Seo } from "./Seo/Seo";
 
 const slides = [
   <Istore />,
@@ -26,6 +27,7 @@ const slides = [
   <Portfolio />,
   <SparkArt />,
   <Trucks />,
+  <Seo />,
 ];
 
 export const Projects = () => {

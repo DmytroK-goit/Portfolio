@@ -102,7 +102,8 @@
 .movies,
 .portfolio,
 .sparkart,
-.trucks {
+.trucks,
+.seo {
   position: relative;
   z-index: 1;
 
@@ -204,6 +205,16 @@
     background-position: right 90px bottom 70px;
   }
 }
+.seo::before {
+  background-image: url(../../images/Seo/SEO.png);
+  background-size: 85%;
+  background-position: right 30px bottom 80px;
+
+  @include media(desktop) {
+    background-size: 30%;
+    background-position: right 40px bottom 8px;
+  }
+}
 
 .title {
   margin: 0;
@@ -251,7 +262,9 @@
   text-align: center;
   font: inherit;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
   @include media(desktop) {
     width: 220px;
     height: 40px;
