@@ -35,7 +35,7 @@ export const Seo = () => {
         <img
           className={s.project_img}
           width="550"
-          src="/src/images/Seo/seo.jpg"
+          src="/Seo/seo.jpg"
           alt="Seo image"
         />
 
