@@ -30,12 +30,12 @@ export const Seo = () => {
   }, [selectedImg]);
   return (
     <div className={`${s.block_project} ${s.seo}`}>
-      <h3 className={s.title}>Portfolio</h3>
+      <h3 className={s.title}>SEO Marketing</h3>
       <div className={s.container}>
         <img
           className={s.project_img}
           width="550"
-          src="/Seo/seo.jpg"
+          src="/seo/seo_m.jpg"
           alt="Seo image"
         />
 
