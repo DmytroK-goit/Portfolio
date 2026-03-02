@@ -42,6 +42,11 @@ export const Header = () => {
             </a>
           </li>
           <li>
+            <a href="#approach" onClick={() => setIsMenuOpen(false)}>
+              {t("nav.approach")}
+            </a>
+          </li>
+          <li>
             <a href="#tech" onClick={() => setIsMenuOpen(false)}>
               {t("nav.tech")}
             </a>

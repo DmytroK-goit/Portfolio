@@ -1,6 +1,7 @@
 {
   "nav.home": "Home",
   "nav.about": "About Me",
+  "nav.approach": "Approach",
   "nav.tech": "My Tech Skills",
   "nav.projects": "Projects",
   "about": {
@@ -34,5 +35,14 @@
   },
   "notFound": {
     "home": "Home"
+  },
+  "approach": {
+    "title": "My Approach",
+    "subtitle": "I follow a structured, user-focused and scalable development process.",
+    "s1": "Understanding business goals, users and project requirements.",
+    "s2": "Planning architecture and choosing the right technologies.",
+    "s3": "Building responsive, clean and maintainable interfaces.",
+    "s4": "Testing, optimization and cross-device compatibility.",
+    "s5": "Deployment, support and long-term scalability."
   }
 }

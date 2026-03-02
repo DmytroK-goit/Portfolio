@@ -5,6 +5,7 @@ import { AboutMe } from "../AboutMe/AboutMe";
 import { Technologies } from "../Technologies/Technologies";
 import { Projects } from "../Projects/Projects";
 import { motion } from "framer-motion";
+import { Approach } from "../Approach/Approach";
 const fadeInVariant = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
@@ -30,7 +31,14 @@ export const Main = () => {
         >
           <AboutMe />
         </motion.div>
-
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+        >
+          <Approach />
+        </motion.div>
         <motion.div
           initial="hidden"
           animate="visible"
