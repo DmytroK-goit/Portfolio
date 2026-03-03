@@ -46,7 +46,7 @@ export const Hero = () => {
           />
         </div>
       </div>
-      <ul className={s.contacts_list}>
+      {/* <ul className={s.contacts_list}>
         <li className={s.contact_item}>
           <motion.div
             whileHover={{ scale: 1.25 }}
@@ -103,7 +103,7 @@ export const Hero = () => {
             </a>
           </motion.div>
         </li>
-      </ul>
+      </ul> */}
     </motion.div>
   );
 };
