@@ -92,8 +92,8 @@ export const Technologies = () => {
           />
 
           <img
-            src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DmytroK-goit&theme=tokyonight"
-            alt="GitHub summary"
+            src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=DmytroK-goit&layout=compact&theme=tokyonight"
+            alt="Top languages"
           />
         </div>
       </div>
