@@ -35,7 +35,7 @@ export const WebTech = () => {
         <img
           className={s.project_img}
           width="550"
-          src="/src/images/webtech/webtech.jpg"
+          src="/webtech/webtech.webp"
           alt="Trucks Campers image"
         />
 

@@ -52,7 +52,9 @@
   width: 60px;
   height: 80px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
 
   &:hover {
@@ -87,4 +89,25 @@
     font-size: 48px;
     text-align: left;
   }
+}
+.githubStats {
+  text-align: center;
+  margin-top: 10px;
+  @include media(desktop) {
+    margin-top: 20px;
+  }
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.stats img {
+  max-width: 300px;
 }

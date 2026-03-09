@@ -12,7 +12,11 @@
     "p4": "Currently, I’m focused on enhancing my expertise and applying it through real-world projects that make an impact."
   },
   "hero": {
-    "name": "Dmytro Kovbasiuk"
+    "name": "Dmytro Kovbasiuk",
+    "info": "I build modern responsive web applications",
+    "exper": "1+ years experience",
+    "btnProjects": "Projects",
+    "btnContact": "Contact Me"
   },
   "education": {
     "title": "Education"

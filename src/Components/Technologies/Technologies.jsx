@@ -82,6 +82,21 @@ export const Technologies = () => {
           <p>Postman</p>
         </li>
       </motion.ul>
+      <div className={s.githubStats}>
+        <h2>GitHub Activity</h2>
+
+        <div className={s.stats}>
+          <img
+            src="https://github-readme-stats-sigma-five.vercel.app/api?username=DmytroK-goit&show_icons=true&theme=tokyonight"
+            alt="GitHub stats"
+          />
+
+          <img
+            src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DmytroK-goit&theme=tokyonight"
+            alt="GitHub summary"
+          />
+        </div>
+      </div>
     </motion.div>
   );
 };

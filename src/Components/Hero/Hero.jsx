@@ -10,6 +10,7 @@ import github from "../../images/svg/contacts/github-icon-2.svg";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -36,7 +37,12 @@ export const Hero = () => {
             />
           </h1>
 
-          <p className={s.information}>Fullstack Developer</p>
+          <p className={s.information}>Frontend / Full Stack Developer</p>
+          <p className={s.information}>{t("hero.info")}</p>
+          <p className={s.information}>React / Next.js / Node.js / MongoDB</p>
+          <p className={`${s.information} ${s.experience}`}>
+            {t("hero.exper")}
+          </p>
         </div>
         <div className={s.container_avatar}>
           <img
@@ -104,6 +110,18 @@ export const Hero = () => {
           </motion.div>
         </li>
       </ul> */}
+      <div className={s.buttons}>
+        <a className={s.hero_btn_proj} href="#projects">
+          {t("hero.btnProjects")}
+        </a>
+
+        <a
+          className={s.hero_btn_proj}
+          href="mailto:k0vbasyuk.dim0n@gmail.com?subject=Contact from Portfolio&body=Hello Dmytro,"
+        >
+          {t("hero.btnContact")}
+        </a>
+      </div>
     </motion.div>
   );
 };
