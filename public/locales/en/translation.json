@@ -6,10 +6,10 @@
   "nav.projects": "Projects",
   "about": {
     "title": "About Me",
-    "p1": "I’m a Fullstack Developer passionate about creating modern, efficient, and user-friendly web applications. Responsible, proactive, and always eager to learn — I continuously improve my skills and explore new technologies.",
-    "p2": "I specialize in building responsive and accessible interfaces using HTML, CSS, JavaScript, React, Redux, and TypeScript. On the backend, I work with Node.js, Express, and MongoDB, and I’m experienced with RESTful APIs and JWT authentication.",
-    "p3": "As a team lead on several projects, I’ve coordinated development processes, supported teammates, and ensured smooth collaboration.",
-    "p4": "Currently, I’m focused on enhancing my expertise and applying it through real-world projects that make an impact."
+    "p1": "Hi, I’m Dmytro — a Fullstack Developer passionate about building modern, efficient web apps. I turn complex problems into clean, user-friendly solutions and enjoy exploring new technologies.",
+    "p2": "On the frontend, I craft responsive, accessible interfaces with React, Redux, TypeScript, HTML, and CSS. On the backend, I build robust APIs with Node.js, Express, and MongoDB, handling authentication and data securely.",
+    "p3": "As a team lead, I coordinated development across multiple projects, guided teammates, and ensured smooth collaboration, delivering high-quality features on time and boosting overall team productivity.",
+    "p4": "I continuously challenge myself with new technologies and real-world projects, always aiming to create impact and growth — both in the product and the team."
   },
   "hero": {
     "name": "Dmytro Kovbasiuk",
@@ -43,11 +43,11 @@
   },
   "approach": {
     "title": "My Approach",
-    "subtitle": "I follow a structured, user-focused and scalable development process.",
-    "s1": "Understanding business goals, users and project requirements.",
-    "s2": "Planning architecture and choosing the right technologies.",
-    "s3": "Building responsive, clean and maintainable interfaces.",
-    "s4": "Testing, optimization and cross-device compatibility.",
-    "s5": "Deployment, support and long-term scalability."
+    "subtitle": "A clear, user-centered process ensures scalable and maintainable results.",
+    "s1": "Start by understanding business goals, users, and project needs to build a solid foundation.",
+    "s2": "Plan the architecture and choose technologies that fit the project perfectly.",
+    "s3": "Craft responsive, clean, and maintainable interfaces with attention to detail.",
+    "s4": "Test rigorously, optimize, and ensure cross-device compatibility.",
+    "s5": "Deploy efficiently and provide long-term support to keep projects scalable and reliable."
   }
 }
