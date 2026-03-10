@@ -50,5 +50,12 @@
     "s3": "Craft responsive, clean, and maintainable interfaces with attention to detail.",
     "s4": "Test rigorously, optimize, and ensure cross-device compatibility.",
     "s5": "Deploy efficiently and provide long-term support to keep projects scalable and reliable."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "btn": "Send Message",
+    "name": "Name",
+    "email": "Email",
+    "msg": "Message"
   }
 }
