@@ -6,6 +6,7 @@ import { Technologies } from "../Technologies/Technologies";
 import { Projects } from "../Projects/Projects";
 import { motion } from "framer-motion";
 import { Approach } from "../Approach/Approach";
+import { ContactForm } from "../ContactForm/ContactForm";
 const fadeInVariant = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
@@ -46,6 +47,14 @@ export const Main = () => {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
         >
           <Technologies />
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+        >
+          <ContactForm />
         </motion.div>
 
         <motion.div

@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { ContactForm } from "../ContactForm/ContactForm";
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -115,10 +116,7 @@ export const Hero = () => {
           {t("hero.btnProjects")}
         </a>
 
-        <a
-          className={s.hero_btn_proj}
-          href="mailto:k0vbasyuk.dim0n@gmail.com?subject=Contact from Portfolio&body=Hello Dmytro,"
-        >
+        <a className={s.hero_btn_proj} href="#contactMe">
           {t("hero.btnContact")}
         </a>
       </div>
