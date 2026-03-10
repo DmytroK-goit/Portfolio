@@ -14,11 +14,12 @@
   width: 100%;
   max-width: 380px;
   padding: 20px;
-
+  margin-bottom: 100px;
   @include media(desktop) {
     scroll-margin-top: 100px;
     max-width: 1440px;
     padding: 40px;
+    margin-bottom: 100px;
   }
 }
 

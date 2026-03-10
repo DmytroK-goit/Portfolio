@@ -32,14 +32,7 @@ export const Main = () => {
         >
           <AboutMe />
         </motion.div>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeInVariant}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-        >
-          <Approach />
-        </motion.div>
+
         <motion.div
           initial="hidden"
           animate="visible"
@@ -52,9 +45,9 @@ export const Main = () => {
           initial="hidden"
           animate="visible"
           variants={fadeInVariant}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
         >
-          <ContactForm />
+          <Approach />
         </motion.div>
 
         <motion.div
@@ -64,6 +57,14 @@ export const Main = () => {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
         >
           <Projects />
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+        >
+          <ContactForm />
         </motion.div>
       </Suspense>
     </motion.div>

@@ -17,6 +17,7 @@ export const Hero = () => {
     >
       <div className={s.main_inf}>
         <div className={s.cont_info}>
+          <p className={s.hello}>{t("hero.hi")}</p>
           <h1 className={s.title}>
             <Typewriter
               words={[t("hero.name")]}
@@ -31,7 +32,7 @@ export const Hero = () => {
 
           <p className={s.information}>Frontend / Full Stack Developer</p>
           <p className={s.information}>{t("hero.info")}</p>
-          <p className={s.information}>React / Next.js / Node.js / MongoDB</p>
+          <p className={s.information}>React • Next.js • Node.js</p>
           <p className={`${s.information} ${s.experience}`}>
             {t("hero.exper")}
           </p>
@@ -42,6 +43,10 @@ export const Hero = () => {
             src={avatar2}
             alt="Dmytro Kovbasiuk Avatar"
           />
+
+          <div className={s.avatar_info}>
+            <span className={s.available}>🟢 Available for work</span>
+          </div>
         </div>
       </div>
       {/* <ul className={s.contacts_list}>
