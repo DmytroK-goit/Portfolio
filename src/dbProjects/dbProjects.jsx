@@ -28,7 +28,7 @@ export const projects = [
       "/finance/finace_app.webp",
       "/finance/head_inform.jpg",
       "/finance/head_inform2.jpg",
-      "/public/finance/head_inform3.jpg",
+      "/finance/head_inform3.jpg",
     ],
   },
   {
@@ -69,7 +69,7 @@ export const projects = [
   {
     id: 3,
     title: "Trucks Сampers",
-    style: "seo",
+    style: "trucks",
     descriptionKey: "projects.truck",
     link: "https://travel-trucks-wine.vercel.app/",
     preview: "/Trucks/head.jpg",

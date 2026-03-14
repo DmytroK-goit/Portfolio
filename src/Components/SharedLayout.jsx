@@ -7,7 +7,7 @@ const SharedLayout = () => {
   const params = new URLSearchParams(location.search);
 
   const isUpwork = params.get("upwork") === "true";
-  console.log(isUpwork);
+
   return (
     <div>
       <Header isUpwork={isUpwork} />
