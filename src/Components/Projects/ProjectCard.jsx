@@ -1,19 +1,12 @@
-import s from "../IndividualStyles.module.scss";
-import { FaHandPointRight } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import s from "./IndividualStyles.module.scss";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
-import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import { FcPrevious, FcNext } from "react-icons/fc";
+import { FaHandPointRight } from "react-icons/fa";
 
-const images = [
-  "/seo/seo.jpg",
-  "/seo/seo2.jpg",
-  "/seo/seo3.jpg",
-  "/seo/seo4.jpg",
-];
-
-export const Seo = () => {
+export const ProjectCard = ({ project }) => {
   const { t } = useTranslation();
 
   const [selectedImg, setSelectedImg] = useState(null);
@@ -21,7 +14,7 @@ export const Seo = () => {
 
   const openModal = (index) => {
     setCurrentIndex(index);
-    setSelectedImg(images[index]);
+    setSelectedImg(project.images[index]);
   };
 
   const handleCloseModal = () => {
@@ -29,22 +22,20 @@ export const Seo = () => {
   };
 
   const nextImage = () => {
-    const newIndex = (currentIndex + 1) % images.length;
+    const newIndex = (currentIndex + 1) % project.images.length;
     setCurrentIndex(newIndex);
-    setSelectedImg(images[newIndex]);
+    setSelectedImg(project.images[newIndex]);
   };
 
   const prevImage = () => {
-    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    const newIndex =
+      (currentIndex - 1 + project.images.length) % project.images.length;
     setCurrentIndex(newIndex);
-    setSelectedImg(images[newIndex]);
+    setSelectedImg(project.images[newIndex]);
   };
 
   useEffect(() => {
     if (!selectedImg) return;
-
-    let touchStartX = 0;
-    let touchEndX = 0;
 
     const handleKeyDown = (e) => {
       if (e.key === "Escape") handleCloseModal();
@@ -52,45 +43,29 @@ export const Seo = () => {
       if (e.key === "ArrowLeft") prevImage();
     };
 
-    const handleTouchStart = (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    };
-
-    const handleTouchEnd = (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      if (touchEndX < touchStartX - 50) nextImage();
-      if (touchEndX > touchStartX + 50) prevImage();
-    };
-
     document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("touchstart", handleTouchStart);
-    document.addEventListener("touchend", handleTouchEnd);
-
     document.body.style.overflow = "hidden";
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("touchstart", handleTouchStart);
-      document.removeEventListener("touchend", handleTouchEnd);
       document.body.style.overflow = "";
     };
-  }, [selectedImg]);
+  }, [selectedImg, currentIndex]);
 
   return (
-    <div className={`${s.block_project} ${s.seo}`}>
-      <h3 className={s.title}>SEO Marketing</h3>
+    <div className={`${s.block_project} ${s[project.style]}`}>
+      <h3 className={s.title}>{project.title}</h3>
 
       <div className={s.container}>
         <img
           className={s.project_img}
-          width="550"
-          src="/seo/seo_m.jpg"
-          alt="Seo image"
+          src={project.preview}
+          alt={project.title}
           onClick={() => openModal(0)}
         />
 
         <div>
-          <p className={s.parag}>{t("projects.seo")}</p>
+          <p className={s.parag}>{t(project.descriptionKey)}</p>
         </div>
       </div>
 
@@ -100,14 +75,14 @@ export const Seo = () => {
 
         <motion.a
           className={s.but}
-          href="https://seo-marketing-rouge.vercel.app/"
+          href={project.link}
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
           animate={{ scale: [1, 1.05, 0.95, 1.05, 1] }}
           transition={{ duration: 1, repeat: Infinity }}
         >
-          SEO Marketing
+          {project.title}
         </motion.a>
       </div>
 
@@ -125,7 +100,7 @@ export const Seo = () => {
               <FcPrevious />
             </button>
 
-            <img src={selectedImg} alt="SEO screenshot" />
+            <img src={selectedImg} alt="project screenshot" />
 
             <button className={s.nextBtn} onClick={nextImage}>
               <FcNext />

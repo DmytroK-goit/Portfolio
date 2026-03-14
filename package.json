@@ -24,6 +24,7 @@
     "react-simple-typewriter": "^5.0.1",
     "sass": "^1.86.0",
     "swiper": "^11.2.6",
+    "yet-another-react-lightbox": "^3.29.1",
     "yup": "^1.7.1"
   },
   "devDependencies": {
