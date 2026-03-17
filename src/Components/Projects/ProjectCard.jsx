@@ -12,7 +12,8 @@ export const ProjectCard = ({ project }) => {
   const [selectedImg, setSelectedImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const openModal = (index) => {
+  const openModal = (index = 0) => {
+    if (!project.images || project.images.length === 0) return;
     setCurrentIndex(index);
     setSelectedImg(project.images[index]);
   };
@@ -65,7 +66,15 @@ export const ProjectCard = ({ project }) => {
         />
 
         <div>
-          <p className={s.parag}>{t(project.descriptionKey)}</p>
+          <p className={s.parag}>{t(`projects.${project.key}.desc`)}</p>
+
+          <p className={s.role}>
+            <strong>Role:</strong> {t(`projects.${project.key}.role`)}
+          </p>
+
+          <p className={s.tech}>
+            <strong>Technologies:</strong> {t(`projects.${project.key}.tech`)}
+          </p>
         </div>
       </div>
 

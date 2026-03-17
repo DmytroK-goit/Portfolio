@@ -29,16 +29,65 @@
     "title": "Projects",
     "btn": "VIEW",
 
-    "aqua": "Team project. Aqua Track is a hydration tracking web application that helps users monitor daily water intake and build healthy habits. As the Front-End Team Lead, I coordinated UI development using React, managed application state with Redux, and supported the team during development. The backend uses Node.js and MongoDB.",
-    "finance": "Financial Analyst is a personal full-stack project for tracking personal income and expenses. Users can add transactions, analyze finances monthly and yearly, and visualize financial data with charts. The application includes secure authentication and is currently in active development.",
-    "istore": "IStore is a full-stack e-commerce application where users can browse products, view details, add items to the cart, and complete purchases. It includes authentication with role-based access (admin, user, demo). Demo account available for testing: Email: demo.admin@gmail.com | Password: 111111. Built with Next.js, Redux Toolkit, Node.js, and MongoDB.",
-    "movie": "A React application that integrates a public movie API to display dynamic movie data. The project demonstrates API integration, state management, and responsive interface development using modern React practices.",
-    "phonebook": "A full-stack contact management application where users can register and manage personal contacts. Features include adding, editing, deleting, sorting, and filtering contacts. Built with React, Node.js, Express, and MongoDB with multilingual support.",
-    "portfolio": "Team portfolio project with a responsive layout. As Team Lead, I managed the GitHub repository, reviewed pull requests, and coordinated the development process. I also implemented the 'Work Together' section.",
-    "sparkart": "A modern landing page designed to present a creative brand and its services. The project focuses on clean UI, responsive design, and an engaging layout aimed at attracting potential clients.",
-    "truck": "A React-based application that allows users to search and filter data from an external API. The project demonstrates dynamic content rendering, API integration, and interactive UI development.",
-    "seo": "A modern landing page for a digital SEO and marketing agency built with Next.js. The project focuses on presenting services such as SEO optimization, analytics, and digital marketing strategies. Responsive design is currently in progress.",
-    "webTech": "A modern responsive landing page for a digital agency built with Next.js and Tailwind CSS using a mobile-first approach. The project focuses on clean UI, responsive design, and performance optimization."
+    "aqua": {
+      "desc": "Team project. Aqua Track is a hydration tracking web application that helps users monitor daily water intake and build healthy habits. As a Front-End Team Lead, I coordinated UI development using React, managed application state with Redux, and supported the team throughout the development process. The backend is built with Node.js and MongoDB.",
+      "role": "Front-End Team Lead. Coordinated UI development, managed state with Redux, and supported the team.",
+      "tech": "React, Redux Toolkit, Node.js, Express, MongoDB, CSS Modules"
+    },
+
+    "finance": {
+      "desc": "Financial Analyst is a personal full-stack project for tracking income and expenses. Users can add transactions, analyze financial data monthly and yearly, and visualize it with charts. The application includes secure authentication and is currently under active development.",
+      "role": "Full Stack Developer. Designed and implemented both frontend and backend architecture.",
+      "tech": "React, Node.js, Express, MongoDB, Chart.js, JWT Authentication"
+    },
+
+    "istore": {
+      "desc": "IStore is a full-stack e-commerce application where users can browse products, view details, add items to the cart, and complete purchases. It includes role-based authentication (admin, user, demo). Demo account: Email: demo.admin@gmail.com | Password: 111111.",
+      "role": "Full Stack Developer. Implemented product catalog, authentication, and cart logic.",
+      "tech": "Next.js, Redux Toolkit, Node.js, Express, MongoDB, Tailwind CSS"
+    },
+
+    "movie": {
+      "desc": "A React application that integrates a public movie API to display dynamic content. The project demonstrates API integration, state management, and responsive UI development.",
+      "role": "Front-End Developer. Implemented API integration, search functionality, and responsive UI.",
+      "tech": "React, REST API, Axios, CSS Modules"
+    },
+
+    "phonebook": {
+      "desc": "A full-stack contact management application where users can register and manage personal contacts. Features include adding, editing, deleting, sorting, and filtering contacts.",
+      "role": "Full Stack Developer. Implemented authentication, CRUD operations, and UI.",
+      "tech": "React, Node.js, Express, MongoDB, JWT Authentication"
+    },
+
+    "portfolio": {
+      "desc": "Team portfolio project with a responsive layout. As a Team Lead, I managed the GitHub repository, reviewed pull requests, and coordinated the development process. I also implemented the 'Work Together' section.",
+      "role": "Front-End Team Lead. Managed repository, reviewed PRs, and coordinated development.",
+      "tech": "React, SCSS, Framer Motion"
+    },
+
+    "sparkart": {
+      "desc": "A modern landing page designed to showcase a creative brand and its services. Focused on clean UI, responsiveness, and engaging layout.",
+      "role": "Front-End Developer. Implemented layout, animations, and responsive design.",
+      "tech": "HTML, SCSS, JavaScript"
+    },
+
+    "truck": {
+      "desc": "A React application for searching and filtering data from an external API. Demonstrates dynamic rendering, API integration, and interactive UI.",
+      "role": "Front-End Developer. Implemented filtering logic, API integration, and UI components.",
+      "tech": "React, Redux Toolkit, REST API"
+    },
+
+    "seo": {
+      "desc": "A modern landing page for a digital SEO and marketing agency built with Next.js. Showcases services such as SEO optimization, analytics, and digital strategies. Responsive design is in progress.",
+      "role": "Front-End Developer. Implemented layout and UI components. Responsive design in progress.",
+      "tech": "Next.js, React, Tailwind CSS"
+    },
+
+    "webTech": {
+      "desc": "A modern responsive landing page for a digital agency built with Next.js and Tailwind CSS using a mobile-first approach. Focused on clean UI, responsiveness, and performance optimization.",
+      "role": "Front-End Developer. Developed responsive UI and optimized performance.",
+      "tech": "Next.js, Tailwind CSS"
+    }
   },
   "notFound": {
     "home": "Home"

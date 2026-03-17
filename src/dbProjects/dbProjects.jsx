@@ -3,7 +3,7 @@ export const projects = [
     id: 9,
     title: "ISTORE",
     style: "istore",
-    descriptionKey: "projects.istore",
+    key: "istore",
     link: "https://i-store-lyart.vercel.app/",
     preview: "/Istore/istore.webp",
     images: [
@@ -21,7 +21,7 @@ export const projects = [
     id: 7,
     title: "Finance App",
     style: "finance",
-    descriptionKey: "projects.finance",
+    key: "finance",
     link: "https://financial-analyst.vercel.app/",
     preview: "/finance/finace_app.webp",
     images: [
@@ -35,7 +35,7 @@ export const projects = [
     id: 8,
     title: "AquaTrack",
     style: "aquaTrack",
-    descriptionKey: "projects.aqua",
+    key: "aqua",
     link: "https://aqua-track-group-01.vercel.app/",
     preview: "/AquaTrack/head.webp",
     images: [
@@ -48,7 +48,7 @@ export const projects = [
     id: 1,
     title: "WebTech",
     style: "webTech",
-    descriptionKey: "projects.webTech",
+    key: "webTech",
     link: "https://webtech-pied.vercel.app/",
     preview: "/webtech/webtech.webp",
     images: [
@@ -61,16 +61,16 @@ export const projects = [
     id: 2,
     title: "SEO Marketing",
     style: "seo",
-    descriptionKey: "projects.seo",
+    key: "seo",
     link: "https://seo-marketing-rouge.vercel.app/",
     preview: "/seo/seo_m.jpg",
     images: ["/seo/seo.jpg", "/seo/seo2.jpg", "/seo/seo3.jpg", "/seo/seo4.jpg"],
   },
   {
     id: 3,
-    title: "Trucks Сampers",
+    title: "Trucks Campers",
     style: "trucks",
-    descriptionKey: "projects.truck",
+    key: "truck",
     link: "https://travel-trucks-wine.vercel.app/",
     preview: "/Trucks/head.jpg",
     images: ["/Trucks/head.jpg", "/Trucks/truck2.jpg", "/Trucks/truck3.jpg"],
@@ -79,7 +79,7 @@ export const projects = [
     id: 4,
     title: "SparkArts",
     style: "sparkart",
-    descriptionKey: "projects.sparkart",
+    key: "sparkart",
     link: "https://dmytrok-goit.github.io/stp-7973/",
     preview: "/SparkArt/main.jpg",
     images: [
@@ -92,7 +92,7 @@ export const projects = [
     id: 5,
     title: "Portfolio",
     style: "portfolio",
-    descriptionKey: "projects.portfolio",
+    key: "portfolio",
     link: "https://dmytrok-goit.github.io/project-js-group02/",
     preview: "/portfolio/head_info.jpg",
     images: [
@@ -105,7 +105,7 @@ export const projects = [
     id: 6,
     title: "PhoneBook",
     style: "phoneBook",
-    descriptionKey: "projects.phonebook",
+    key: "phonebook",
     link: "https://phone-book-full-stack.vercel.app/",
     preview: "/PhoneBook/mainForms.jpg",
     images: [
@@ -119,7 +119,7 @@ export const projects = [
     id: 10,
     title: "Movies",
     style: "movies",
-    descriptionKey: "projects.movie",
+    key: "movie",
     link: "https://goit-react-hw-05-three-beige.vercel.app/",
     preview: "/movies/head.jpg",
     images: [
