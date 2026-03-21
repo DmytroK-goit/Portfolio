@@ -70,7 +70,7 @@ export const ContactForm = () => {
       <h2 className={s.title}>{t("contact.title")}</h2>
 
       <div className={s.form_block}>
-        <img src="/form/Form_man.png" alt="Man in table" />
+        <img src="/form/Form_man.webp" alt="Man in table" />
 
         <form ref={form} onSubmit={handleSubmit(sendEmail)} className={s.form}>
           <label>{t("contact.name")}</label>

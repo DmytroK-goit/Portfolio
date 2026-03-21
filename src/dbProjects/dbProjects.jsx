@@ -8,13 +8,13 @@ export const projects = [
     preview: "/Istore/istore.webp",
     images: [
       "/Istore/istore.webp",
-      "/Istore/istore2.jpg",
-      "/Istore/istore3.jpg",
-      "/Istore/istore4.jpg",
-      "/Istore/istore5.jpg",
-      "/Istore/istore6.jpg",
-      "/Istore/istore7.jpg",
-      "/Istore/istore8.jpg",
+      "/Istore/istore2.webp",
+      "/Istore/istore3.webp",
+      "/Istore/istore4.webp",
+      "/Istore/istore5.webp",
+      "/Istore/istore6.webp",
+      "/Istore/istore7.webp",
+      "/Istore/istore8.webp",
     ],
   },
   {
@@ -26,9 +26,9 @@ export const projects = [
     preview: "/finance/finace_app.webp",
     images: [
       "/finance/finace_app.webp",
-      "/finance/head_inform.jpg",
-      "/finance/head_inform2.jpg",
-      "/finance/head_inform3.jpg",
+      "/finance/head_inform.webp",
+      "/finance/head_inform2.webp",
+      "/finance/head_inform3.webp",
     ],
   },
   {
@@ -40,8 +40,8 @@ export const projects = [
     preview: "/AquaTrack/head.webp",
     images: [
       "/AquaTrack/head.webp",
-      "/AquaTrack/mainPage.jpg",
-      "/AquaTrack/settings.jpg",
+      "/AquaTrack/mainPage.webp",
+      "/AquaTrack/settings.webp",
     ],
   },
   {
@@ -63,8 +63,13 @@ export const projects = [
     style: "seo",
     key: "seo",
     link: "https://seo-marketing-rouge.vercel.app/",
-    preview: "/seo/seo_m.jpg",
-    images: ["/seo/seo.jpg", "/seo/seo2.jpg", "/seo/seo3.jpg", "/seo/seo4.jpg"],
+    preview: "/seo/seo_m.webp",
+    images: [
+      "/seo/seo.webp",
+      "/seo/seo2.webp",
+      "/seo/seo3.webp",
+      "/seo/seo4.webp",
+    ],
   },
   {
     id: 3,
