@@ -11,6 +11,7 @@ import Tailwind from "../../images/svg/tailwind-css-1.svg";
 import Figma from "../../images/svg/figma-icon.svg";
 import Postman from "../../images/svg/postman.svg";
 import Mongo from "../../images/svg/mongodb-icon-1.svg";
+import GSAP from "../../images/svg/gsap.svg";
 import next from "../../images/svg/nextjs.svg";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -68,6 +69,10 @@ export const Technologies = () => {
         <li className={s.item}>
           <img src={Tailwind} alt="Tailwind" />
           <p>Tailwind</p>
+        </li>
+        <li className={s.item}>
+          <img src={GSAP} alt="GSAP" />
+          <p>GSAP</p>
         </li>
         <li className={s.item}>
           <img src={VSC} alt="VS CODE" />
