@@ -72,6 +72,19 @@ export const projects = [
     ],
   },
   {
+    id: 10,
+    title: "Dudeshape",
+    style: "dudeshape",
+    key: "dudeshape",
+    link: "https://dudeshape-eight.vercel.app/",
+    preview: "/furniture/futniture.jpg",
+    images: [
+      "/furniture/futniture.jpg",
+      "/furniture/futniture1.jpg",
+      "/furniture/futniture2.jpg",
+    ],
+  },
+  {
     id: 3,
     title: "Trucks Campers",
     style: "trucks",

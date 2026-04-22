@@ -82,6 +82,11 @@
       "role": "Front-End Developer. Implemented layout and UI components. Responsive design in progress.",
       "tech": "Next.js, React, Tailwind CSS"
     },
+    "dudeshape": {
+      "desc": "A modern furniture landing page focused on showcasing stylish chairs and interior design. The project emphasizes clean UI, smooth animations, and a visually appealing user experience.",
+      "role": "Front-End Developer",
+      "tech": "Next.js, React, Tailwind CSS, GSAP"
+    },
 
     "webTech": {
       "desc": "A modern responsive landing page for a digital agency built with Next.js and Tailwind CSS using a mobile-first approach. Focused on clean UI, responsiveness, and performance optimization.",

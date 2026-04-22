@@ -26,7 +26,7 @@
 .sparkart,
 .trucks,
 .seo,
-.webTech {
+.dudeshape .webTech {
   position: relative;
   z-index: 1;
   &::before {
@@ -43,6 +43,7 @@
 .aquaTrack::before {
   background-image: url(../../images/AquaTrack/water.webp);
   background-size: 100%;
+  background-repeat: no-repeat;
   background-position: right 0px bottom 0px;
   @include media(desktop) {
     background-size: 50%;
@@ -52,6 +53,7 @@
 .finance::before {
   background-image: url(../../images/finance/finance.webp);
   background-size: 80%;
+  background-repeat: no-repeat;
   background-position: right 40px bottom 48px;
   @include media(desktop) {
     background-size: 30%;
@@ -61,6 +63,7 @@
 .istore::before {
   background-image: url(../../images/Istore/istoreBG.webp);
   background-size: 80%;
+  background-repeat: no-repeat;
   background-position: right 40px bottom 48px;
   @include media(desktop) {
     background-size: 30%;
@@ -70,6 +73,7 @@
 .phoneBook::before {
   background-image: url(../../images/PhoneBook/phoneBook.png);
   background-size: 85%;
+  background-repeat: no-repeat;
   background-position: right 30px bottom 80px;
   @include media(desktop) {
     background-size: 30%;
@@ -79,6 +83,7 @@
 .movies::before {
   background-image: url(../../images/movies/movie.png);
   background-size: 80%;
+  background-repeat: no-repeat;
   background-position: right 50px bottom 80px;
   @include media(desktop) {
     background-size: 25%;
@@ -88,6 +93,7 @@
 .portfolio::before {
   background-image: url(../../images/portfolio/portf.png);
   background-size: 80%;
+  background-repeat: no-repeat;
   background-position: right 0px bottom 80px;
   @include media(desktop) {
     background-size: 25%;
@@ -97,6 +103,7 @@
 .sparkart::before {
   background-image: url(../../images/SparkArt/sparkArt.png);
   background-size: 80%;
+  background-repeat: no-repeat;
   background-position: right 0px bottom 40px;
   @include media(desktop) {
     background-size: 30%;
@@ -106,6 +113,7 @@
 .trucks::before {
   background-image: url(../../images/Trucks/campers2.png);
   background-size: 90%;
+  background-repeat: no-repeat;
   background-position: right 0px bottom 70px;
   @include media(desktop) {
     background-size: 35%;
@@ -115,6 +123,17 @@
 .seo::before {
   background-image: url(../../images/Seo/SEO.png);
   background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: right 30px bottom 80px;
+  @include media(desktop) {
+    background-size: 30%;
+    background-position: right 40px bottom 8px;
+  }
+}
+.dudeshape::before {
+  background-image: url(../../images/dudeshape/cheir.png);
+  background-size: 85%;
+  background-repeat: no-repeat;
   background-position: right 30px bottom 80px;
   @include media(desktop) {
     background-size: 30%;
@@ -124,6 +143,7 @@
 .webTech::before {
   background-image: url(../../images/webtech/webTechBg.png);
   background-size: 85%;
+  background-repeat: no-repeat;
   background-position: right 30px bottom 80px;
   @include media(desktop) {
     background-size: 30%;
