@@ -45,6 +45,19 @@ export const projects = [
     ],
   },
   {
+    id: 12,
+    title: "FoodZero",
+    style: "foodzero",
+    key: "foodzero",
+    link: "https://foodzero-bay.vercel.app/",
+    preview: "/foodzero/main.jpg",
+    images: [
+      "/foodzero/menu.jpg",
+      "/foodzero/about.jpg",
+      "/foodzero/portf.jpg",
+    ],
+  },
+  {
     id: 1,
     title: "WebTech",
     style: "webTech",
@@ -134,7 +147,7 @@ export const projects = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: "Movies",
     style: "movies",
     key: "movie",

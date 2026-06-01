@@ -92,6 +92,11 @@
       "desc": "A modern responsive landing page for a digital agency built with Next.js and Tailwind CSS using a mobile-first approach. Focused on clean UI, responsiveness, and performance optimization.",
       "role": "Front-End Developer. Developed responsive UI and optimized performance.",
       "tech": "Next.js, Tailwind CSS"
+    },
+    "foodzero": {
+      "desc": "A multi-page restaurant website built with Next.js and Tailwind CSS. The project features a scalable architecture, reusable components, and a clean user interface. Designed with future expansion in mind, including integration with a database, dynamic content management, and additional business functionality.",
+      "role": "Front-End Developer. Developed the application structure, implemented UI components, created multiple pages, and prepared the project for future scalability and backend integration.",
+      "tech": "Next.js, Tailwind CSS"
     }
   },
   "notFound": {
